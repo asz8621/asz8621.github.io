@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-center-atom.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"asz8621.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="詳細步驟教學，輕鬆在 Hexo NexT 主題中安裝 Gitalk 留言系統，讓你的 Hexo 部落格擁有更佳的用戶互動。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo NexT 開啟 Gitalk 留言版">
+<meta property="og:url" content="https://asz8621.github.io/hexo/next-gitalk/index.html">
+<meta property="og:site_name" content="Nielsen Blog">
+<meta property="og:description" content="詳細步驟教學，輕鬆在 Hexo NexT 主題中安裝 Gitalk 留言系統，讓你的 Hexo 部落格擁有更佳的用戶互動。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20header.png?alt=media&token=bc620665-dc2e-44ef-abcb-4409262ca333">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20sidebar.png?alt=media&token=fea9d1b0-bc79-4366-86a1-ab947bbc4851">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20Developer%20settings.png?alt=media&token=24a0be35-f676-4a64-a74f-9da27e71ac9b">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20New%20OAuth%20App.png?alt=media&token=fef39b81-3328-4881-9bd7-ea1ced5b939d">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20Register%20a%20new%20OAuth%20application.png?alt=media&token=dfd87566-299a-41fe-b627-2f4aeea17ae5">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20get%20%20secret.png?alt=media&token=8e6db2fd-59a2-47e4-8195-d1c1bf480598">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20OAuth%20secret%20value.png?alt=media&token=0f92d47b-b49a-41ab-b0b8-3b5640c8869b">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20set%20up%20successfully.png?alt=media&token=390328d8-971e-4ff1-ab5d-2d2bdeaad901">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20Error%20Not%20Found..png?alt=media&token=f000db7a-07c5-454c-be52-3cbe5fc2418d">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20%20No%20related%20issues%20found.png?alt=media&token=fe92c279-5d2c-420f-a962-eb7f78b55e99">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20Be%20careful.png?alt=media&token=0c301d5c-fc76-455f-907b-883fd485d01d">
+<meta property="article:published_time" content="2024-09-22T08:50:23.000Z">
+<meta property="article:modified_time" content="2024-09-23T16:33:00.997Z">
+<meta property="article:author" content="Nielsen">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20header.png?alt=media&token=bc620665-dc2e-44ef-abcb-4409262ca333">
+
+
+<link rel="canonical" href="https://asz8621.github.io/hexo/next-gitalk/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://asz8621.github.io/hexo/next-gitalk/","path":"hexo/next-gitalk/","title":"Hexo NexT 開啟 Gitalk 留言版"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Hexo NexT 開啟 Gitalk 留言版 | Nielsen Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Nielsen Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Front-End Blog｜ Frontend Fun</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜尋..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%BB%E5%86%8A-OAuth-Apps"><span class="nav-number">2.</span> <span class="nav-text">註冊 OAuth Apps</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%99%BB%E5%85%A5%E4%BD%A0%E7%9A%84-GitHub-%E9%BB%9E%E6%93%8A%E9%A0%AD%E5%83%8F"><span class="nav-number">2.1.</span> <span class="nav-text">登入你的 GitHub 點擊頭像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%9E%E9%81%B8-Settings"><span class="nav-number">2.2.</span> <span class="nav-text">點選 Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%9E%E9%81%B8-Developer-settings"><span class="nav-number">2.3.</span> <span class="nav-text">點選 Developer settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%A2%9E-OAuth-App"><span class="nav-number">2.4.</span> <span class="nav-text">新增 OAuth App</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A1%AB%E5%AF%AB-OAuth-App-%E8%B3%87%E6%96%99"><span class="nav-number">2.5.</span> <span class="nav-text">填寫 OAuth App 資料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E5%BE%97-Client-Secret"><span class="nav-number">2.6.</span> <span class="nav-text">取得 Client Secret</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next-config-yml-%E8%A8%AD%E5%AE%9A"><span class="nav-number">3.</span> <span class="nav-text">next&#x2F;_config.yml 設定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%8D%E4%BE%86%E5%B0%B1%E6%98%AF%E8%AA%AA%E8%AA%AA%E6%88%91%E5%8D%A1%E9%97%9C%E7%9A%84%E9%83%A8%E5%88%86%EF%BC%8C%E5%A4%A7%E6%A6%82%E6%9C%83%E5%87%BA%E7%8F%BE%E5%85%A9%E7%A8%AE%E7%8B%80%E6%B3%81%EF%BC%8C%E5%85%88%E4%BE%86%E8%AA%AA%E7%AC%AC%E4%B8%80%E7%A8%AE%E7%8B%80%E6%B3%81"><span class="nav-number">4.</span> <span class="nav-text">再來就是說說我卡關的部分，大概會出現兩種狀況，先來說第一種狀況</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8B%80%E6%B3%81%E4%B8%80%EF%BC%9AGitalk-%E5%87%BA%E7%8F%BE-Error-Not-Found"><span class="nav-number">4.1.</span> <span class="nav-text">狀況一：Gitalk 出現 Error Not Found</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8B%80%E6%B3%81%E4%BA%8C%EF%BC%9A%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E9%97%9C%E7%9A%84-issues-%E9%80%B2%E8%A1%8C%E8%A9%95%E8%AB%96"><span class="nav-number">4.2.</span> <span class="nav-text">狀況二：未找到相關的 issues 進行評論</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Nielsen"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Nielsen</p>
+  
+  <div class="site-description" itemprop="description">前端開發筆記，歡迎志同道合的朋友一起討論與交流。</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://portaly.cc/asz718460/support" title="portaly → https:&#x2F;&#x2F;portaly.cc&#x2F;asz718460&#x2F;support" rel="noopener me" target="_blank"><i class="fas fa-hand-holding-usd fa-fw"></i>portaly</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:asz718460@gmail.com" title="E-Mail → mailto:asz718460@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://asz8621.github.io/hexo/next-gitalk/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Nielsen">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nielsen Blog">
+      <meta itemprop="description" content="提供個人前端技術、實用技巧與深入分析，讓你的前端開發之旅充滿樂趣。探索 Vue、React、JavaScript 等熱門技術的最新趨勢與實戰技巧。讓我們幫助你使編程更高效、更有趣！">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Hexo NexT 開啟 Gitalk 留言版 | Nielsen Blog">
+      <meta itemprop="description" content="詳細步驟教學，輕鬆在 Hexo NexT 主題中安裝 Gitalk 留言系統，讓你的 Hexo 部落格擁有更佳的用戶互動。">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo NexT 開啟 Gitalk 留言版
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2024-09-22 16:50:23" itemprop="dateCreated datePublished" datetime="2024-09-22T16:50:23+08:00">2024-09-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">詳細步驟教學，輕鬆在 Hexo NexT 主題中安裝 Gitalk 留言系統，讓你的 Hexo 部落格擁有更佳的用戶互動。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>決定使用 Gitalk 來當我部落格的留言板後，中間一度卡關等等會再提到卡關的細節，差點想放棄用別的留言板，希望來看的人安裝與使用都能夠不卡關。</p>
+<h2 id="註冊-OAuth-Apps"><a href="#註冊-OAuth-Apps" class="headerlink" title="註冊 OAuth Apps"></a>註冊 OAuth Apps</h2><h3 id="登入你的-GitHub-點擊頭像"><a href="#登入你的-GitHub-點擊頭像" class="headerlink" title="登入你的 GitHub 點擊頭像"></a>登入你的 GitHub 點擊頭像</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20header.png?alt=media&token=bc620665-dc2e-44ef-abcb-4409262ca333" alt="GitHub header"></p>
+<h3 id="點選-Settings"><a href="#點選-Settings" class="headerlink" title="點選 Settings"></a>點選 Settings</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20sidebar.png?alt=media&token=fea9d1b0-bc79-4366-86a1-ab947bbc4851" alt="GitHub sidebar"></p>
+<h3 id="點選-Developer-settings"><a href="#點選-Developer-settings" class="headerlink" title="點選 Developer settings"></a>點選 Developer settings</h3><p>頁面要往下拉才會看到 <code>Developer settings</code> 通常在左側最下面<br><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20Developer%20settings.png?alt=media&token=24a0be35-f676-4a64-a74f-9da27e71ac9b" alt="GitHub Developer settings"></p>
+<h3 id="新增-OAuth-App"><a href="#新增-OAuth-App" class="headerlink" title="新增 OAuth App"></a>新增 OAuth App</h3><p>點選左側的 <code>OAuth Apps</code> -&gt; 在點 <code>New OAuth App</code><br><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20New%20OAuth%20App.png?alt=media&token=fef39b81-3328-4881-9bd7-ea1ced5b939d" alt="GitHub New OAuth App"></p>
+<h3 id="填寫-OAuth-App-資料"><a href="#填寫-OAuth-App-資料" class="headerlink" title="填寫 OAuth App 資料"></a>填寫 OAuth App 資料</h3><ol>
+<li><p><strong>Application name</strong>：應用程式的名稱，例如：<code>XXX 部落格</code></p>
+</li>
+<li><p><strong>Homepage URL</strong>：應用程式主頁的完整 URL。使用者點擊連結後會被帶到這個地址，通常是應用程式的官網或項目頁面，例如：<code>https://asz8621.github.io/</code></p>
+</li>
+<li><p><strong>Application description</strong>：應用程式的描述，這是顯示給所有使用你應用程式的使用者的文字，幫助使用者了解應用程式的功能和用途，例如：<code>部落格 OAuth</code></p>
+</li>
+<li><p><strong>Authorization callback URL</strong>：應用程式的回調 URL。在使用者授權後，GitHub 會將使用者重新導向到這個 URL。確保此 URL 與應用程式的設定相匹配，以避免授權錯誤，例如：<code>https://asz8621.github.io/</code></p>
+</li>
+<li><p><strong>Enable Device Flow</strong>：允許此 OAuth 應用程式透過裝置流（Device Flow）來授權使用者。設備流通常用於沒有瀏覽器或輸入設備的場景，例如智慧電視或物聯網設備。啟用後，使用者可以透過裝置取得授權代碼並在其他裝置上輸入，以完成登入。</p>
+</li>
+</ol>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20Register%20a%20new%20OAuth%20application.png?alt=media&token=dfd87566-299a-41fe-b627-2f4aeea17ae5" alt="GitHub Register a new OAuth application"></p>
+<h3 id="取得-Client-Secret"><a href="#取得-Client-Secret" class="headerlink" title="取得 Client Secret"></a>取得 Client Secret</h3><p>註冊完 OAuth App 會跳到此畫面，點選 <code>Generate a new client secret</code> 來取得 Client Secret<br><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20get%20%20secret.png?alt=media&token=8e6db2fd-59a2-47e4-8195-d1c1bf480598" alt="GitHub get  secret"></p>
+<p>跳出以下畫面代表取得完成，請先複製你的 <code>Client Secret</code>，不然重新整理後你就無法複製 <code>Client Secret</code>，再來複製你的 <code>Client ID</code> 等等設定也會用到<br><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20OAuth%20secret%20value.png?alt=media&token=0f92d47b-b49a-41ab-b0b8-3b5640c8869b" alt="GitHub OAuth secret value"></p>
+<h2 id="next-config-yml-設定"><a href="#next-config-yml-設定" class="headerlink" title="next&#x2F;_config.yml 設定"></a>next&#x2F;_config.yml 設定</h2><p>這邊的設定我原本想放在 <a href="/hexo/next-config-configuration">Hexo NexT _config.yml 設定</a> 這篇裡面，但試想一想還是算了，拉一篇新的來寫比較詳細，以下是我的設定：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">gitalk:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">github_id:</span> <span class="string">asz8621</span> <span class="comment"># GitHub repo owner</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">asz8621.github.io</span> <span class="comment"># Repository name to store issues</span></span><br><span class="line">  <span class="attr">client_id:</span> <span class="string">貼上剛剛複製的_Client_ID</span> <span class="comment"># GitHub Application Client ID</span></span><br><span class="line">  <span class="attr">client_secret:</span> <span class="string">貼上剛剛複製的_Client_Secret</span> <span class="comment"># GitHub Application Client Secret</span></span><br><span class="line">  <span class="attr">admin_user:</span> <span class="string">asz8621</span> <span class="comment"># GitHub repo owner and collaborators, only these guys can initialize gitHub issues</span></span><br><span class="line">  <span class="attr">distraction_free_mode:</span> <span class="literal">true</span> <span class="comment"># Facebook-like distraction free mode</span></span><br><span class="line">  <span class="comment"># When the official proxy is not available, you can change it to your own proxy address</span></span><br><span class="line">  <span class="attr">proxy:</span> <span class="string">https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token</span> <span class="comment"># This is official proxy address</span></span><br><span class="line">  <span class="comment"># Gitalk&#x27;s display language depends on user&#x27;s browser or system environment</span></span><br><span class="line">  <span class="comment"># If you want everyone visiting your site to see a uniform language, you can set a force language value</span></span><br><span class="line">  <span class="comment"># Available values: en | es-ES | fr | ru | zh-CN | zh-TW</span></span><br><span class="line">  <span class="attr">labels:</span> <span class="string">Gitalk</span></span><br><span class="line">  <span class="attr">language:</span> <span class="string">zh-TW</span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p><strong>enable</strong>：啟用或禁用 Gitalk 評論系統。如果設置為 <code>true</code>，則會在頁面上顯示評論。</p>
+</li>
+<li><p><strong>github_id</strong>：GitHub 倉庫的擁有者用戶名，用於指定存儲評論的倉庫。</p>
+</li>
+<li><p><strong>repo</strong>：用於存儲評論的 GitHub 倉庫名稱。評論將以 issue 的形式存儲在這個倉庫中。</p>
+</li>
+<li><p><strong>client_id</strong>：GitHub OAuth 的 Client ID。</p>
+</li>
+<li><p><strong>client_secret</strong>：GitHub OAuth 的 Client Secret。注意，這個請勿公開，如果遺失再去申請一個。</p>
+</li>
+<li><p><strong>admin_user</strong>：具有初始化 GitHub issues 權限的用戶列表，僅這些用戶可以創建和管理評論。</p>
+</li>
+<li><p><strong>distraction_free_mode</strong>：啟用“專注模式”，在這種模式下，評論框會減少其他干擾，更加簡潔。</p>
+</li>
+<li><p><strong>proxy</strong>：當官方代理不可用時，可以設置自定義的代理地址。代理用於解決跨域請求的問題。</p>
+</li>
+<li><p><strong>labels</strong>：為 GitHub issue 添加標籤，便於分類和管理評論。</p>
+</li>
+<li><p><strong>language</strong>：設置 Gitalk 的顯示語言。如果希望所有訪問者看到統一的語言，可以在這裡指定（如 <code>zh-TW</code> 表示繁體中文）。</p>
+</li>
+</ol>
+<p>到這邊就差不多設定完成了，再來就是將部落格重新整理後隨便選一篇文章拉到最下面去看一下有沒有設定成功，以下是成功的畫面：</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20set%20up%20successfully.png?alt=media&token=390328d8-971e-4ff1-ab5d-2d2bdeaad901" alt="Gitalk set up successfully"></p>
+<hr>
+<h2 id="再來就是說說我卡關的部分，大概會出現兩種狀況，先來說第一種狀況"><a href="#再來就是說說我卡關的部分，大概會出現兩種狀況，先來說第一種狀況" class="headerlink" title="再來就是說說我卡關的部分，大概會出現兩種狀況，先來說第一種狀況"></a>再來就是說說我卡關的部分，大概會出現兩種狀況，先來說第一種狀況</h2><h3 id="狀況一：Gitalk-出現-Error-Not-Found"><a href="#狀況一：Gitalk-出現-Error-Not-Found" class="headerlink" title="狀況一：Gitalk 出現 Error Not Found"></a>狀況一：Gitalk 出現 Error Not Found</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20Error%20Not%20Found..png?alt=media&token=f000db7a-07c5-454c-be52-3cbe5fc2418d" alt="Gitalk Error Not Found"></p>
+<ol>
+<li>請先確認 <code>next/_config.yml</code> 與 OAuth App 資料 是否寫正確</li>
+<li>確保你的 Blog 專案是公開的。</li>
+</ol>
+<h3 id="狀況二：未找到相關的-issues-進行評論"><a href="#狀況二：未找到相關的-issues-進行評論" class="headerlink" title="狀況二：未找到相關的 issues 進行評論"></a>狀況二：未找到相關的 issues 進行評論</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20%20No%20related%20issues%20found.png?alt=media&token=fe92c279-5d2c-420f-a962-eb7f78b55e99" alt="Gitalk No related issues found"></p>
+<p>這狀況看似簡單登入好像就完成了，但結果卻不是你所想的那樣，因為只要你登入會出現以下畫面</p>
+<p>Be careful!<br>The redirect_uri is not associated with this application.<br>The application might be misconfigured or could be trying to redirect you to a website you weren’t expecting.</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20Be%20careful.png?alt=media&token=0c301d5c-fc76-455f-907b-883fd485d01d" alt="Gitalk Be careful"></p>
+<p>這時候你看一下網址的 <code>redirect_uri</code>，你會發現怎麼不是 <code>XXXXX.github.io</code>，因為我有買網址並且用 Cloudflare 管理我的網址，所以會轉到我買的網址上 <code>www.nielsen.tw</code> 導致出現 Be careful! 的錯誤畫面，這時候只要將它改成 <code>XXXXX.github.io</code> 就可以使用 GitHub 登入了，登入後就可以正常使用 Gitalk</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 範例網址</span></span><br><span class="line"><span class="string">https://github.com/login/oauth/authorize?client_id=XXXXXXXXXXXXXXX&amp;redirect_uri=https%3A%2F%2Fwww.nielsen.tw%2Fjavascript%2Farray-practical-uses%2F&amp;scope=public_repo</span></span><br></pre></td></tr></table></figure>
+
+<p>希望這篇筆記能幫助各位順利完成 Gitalk 的安裝！</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>作者： </strong>Nielsen
+  </li>
+  <li class="post-copyright-link">
+      <strong>文章連結：</strong>
+      <a href="https://asz8621.github.io/hexo/next-gitalk/" title="Hexo NexT 開啟 Gitalk 留言版">https://asz8621.github.io/hexo/next-gitalk/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># Hexo</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/javascript/object-practical-uses/" rel="prev" title="JavaScript 物件實戰用法">
+                  <i class="fa fa-angle-left"></i> JavaScript 物件實戰用法
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Nielsen</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/asz8621" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"asz8621","repo":"asz8621.github.io","client_id":"Ov23lihBbo3WzJoRjZsa","client_secret":"c592d79eaf88c14b2d87d53ff195c7df70d6a020","admin_user":"asz8621","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","labels":"Gitalk","language":"zh-TW","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"f799782ea23bccaa62d489fce09cf3ff"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>
