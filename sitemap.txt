@@ -1,3 +1,4 @@
+https://asz8621.github.io/googlec52a0f7a2fd90ce1.html
 https://asz8621.github.io/404.html
 https://asz8621.github.io/hexo/next-gitalk/
 https://asz8621.github.io/hexo/next-install/
@@ -22,13 +23,13 @@ https://asz8621.github.io/tags/index.html
 https://asz8621.github.io/categories/index.html
 https://asz8621.github.io/about/index.html
 https://asz8621.github.io/
+https://asz8621.github.io/tags/hexo/
 https://asz8621.github.io/tags/browser/
 https://asz8621.github.io/tags/chrome/
 https://asz8621.github.io/tags/devtools/
-https://asz8621.github.io/tags/hexo/
 https://asz8621.github.io/tags/javascript/
 https://asz8621.github.io/tags/vscode/
-https://asz8621.github.io/categories/browser/
 https://asz8621.github.io/categories/hexo/
+https://asz8621.github.io/categories/browser/
 https://asz8621.github.io/categories/javascript/
 https://asz8621.github.io/categories/vscode/

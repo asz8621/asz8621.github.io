@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://asz8621.github.io/googlec52a0f7a2fd90ce1.html</loc>
+    
+    <lastmod>2024-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://asz8621.github.io/404.html</loc>
     
     <lastmod>2024-09-24</lastmod>
@@ -211,50 +220,50 @@
 
   <url>
     <loc>https://asz8621.github.io/</loc>
-    <lastmod>2024-09-24</lastmod>
+    <lastmod>2024-09-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://asz8621.github.io/tags/hexo/</loc>
+    <lastmod>2024-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://asz8621.github.io/tags/browser/</loc>
-    <lastmod>2024-09-24</lastmod>
+    <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://asz8621.github.io/tags/chrome/</loc>
-    <lastmod>2024-09-24</lastmod>
+    <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://asz8621.github.io/tags/devtools/</loc>
-    <lastmod>2024-09-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://asz8621.github.io/tags/hexo/</loc>
-    <lastmod>2024-09-24</lastmod>
+    <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://asz8621.github.io/tags/javascript/</loc>
-    <lastmod>2024-09-24</lastmod>
+    <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://asz8621.github.io/tags/vscode/</loc>
-    <lastmod>2024-09-24</lastmod>
+    <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -262,29 +271,29 @@
 
   
   <url>
-    <loc>https://asz8621.github.io/categories/browser/</loc>
-    <lastmod>2024-09-24</lastmod>
+    <loc>https://asz8621.github.io/categories/hexo/</loc>
+    <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://asz8621.github.io/categories/hexo/</loc>
-    <lastmod>2024-09-24</lastmod>
+    <loc>https://asz8621.github.io/categories/browser/</loc>
+    <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://asz8621.github.io/categories/javascript/</loc>
-    <lastmod>2024-09-24</lastmod>
+    <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://asz8621.github.io/categories/vscode/</loc>
-    <lastmod>2024-09-24</lastmod>
+    <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
