@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.nielsen.tw/javascript/array-iteration-and-transformation/</loc>
+    
+    <lastmod>2024-09-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nielsen.tw/googlec52a0f7a2fd90ce1.html</loc>
     
     <lastmod>2024-09-25</lastmod>
@@ -147,15 +156,6 @@
   
   <url>
     <loc>https://www.nielsen.tw/javascript/changes-original-array-functions/</loc>
-    
-    <lastmod>2024-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nielsen.tw/javascript/array-iteration-and-transformation/</loc>
     
     <lastmod>2024-09-20</lastmod>
     

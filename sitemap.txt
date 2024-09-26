@@ -1,3 +1,4 @@
+https://www.nielsen.tw/javascript/array-iteration-and-transformation/
 https://www.nielsen.tw/googlec52a0f7a2fd90ce1.html
 https://www.nielsen.tw/404.html
 https://www.nielsen.tw/hexo/next-gitalk/
@@ -15,7 +16,6 @@ https://www.nielsen.tw/vscode/template-literals-configuration/
 https://www.nielsen.tw/javascript/operation-syntax/
 https://www.nielsen.tw/javascript/array-practical-uses/
 https://www.nielsen.tw/javascript/changes-original-array-functions/
-https://www.nielsen.tw/javascript/array-iteration-and-transformation/
 https://www.nielsen.tw/browser/no-paste-in-devtools/
 https://www.nielsen.tw/javascript/event/
 https://www.nielsen.tw/javascript/javascript-template-literals/

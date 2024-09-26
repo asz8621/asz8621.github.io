@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.nielsen.tw/javascript/array-iteration-and-transformation/</loc>
+    <lastmod>2024-09-26</lastmod>
+  </url>
+  <url>
     <loc>https://www.nielsen.tw/hexo/next-gitalk/</loc>
     <lastmod>2024-09-23</lastmod>
   </url>
@@ -58,10 +62,6 @@
   </url>
   <url>
     <loc>https://www.nielsen.tw/javascript/changes-original-array-functions/</loc>
-    <lastmod>2024-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nielsen.tw/javascript/array-iteration-and-transformation/</loc>
     <lastmod>2024-09-20</lastmod>
   </url>
   <url>

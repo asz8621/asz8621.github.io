@@ -33,7 +33,7 @@
 <meta property="og:description" content="本文介紹 JavaScript 陣列的遍歷與轉換方法，提供實用範例，幫助開發者高效操作和管理陣列數據。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2024-09-19T11:51:09.000Z">
-<meta property="article:modified_time" content="2024-09-20T06:40:59.521Z">
+<meta property="article:modified_time" content="2024-09-26T15:12:52.090Z">
 <meta property="article:author" content="Nielsen">
 <meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
@@ -273,14 +273,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 -->
-<div class="note primary bg-primary">blah blah blah</div>
-
-<!-- 标签 方式 -->
-<div class="note primary"><p>blah blah blah</p>
-</div>
-
-<h2 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h2><p>使用 <code>forEach</code> 方法遍歷陣列，對每個元素執行指定的函數。</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h2><p>使用 <code>forEach</code> 方法遍歷陣列，對每個元素執行指定的函數。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> data = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">data.<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">item, index, array</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(item, index, array);</span><br><span class="line">    <span class="comment">// 結果如下</span></span><br><span class="line">    <span class="comment">// 1, 0, [1, 2, 3]</span></span><br><span class="line">    <span class="comment">// 2, 1, [1, 2, 3]</span></span><br><span class="line">    <span class="comment">// 3, 2, [1, 2, 3]</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
 <h2 id="map"><a href="#map" class="headerlink" title="map"></a>map</h2><ol>
