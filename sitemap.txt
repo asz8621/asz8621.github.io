@@ -23,13 +23,13 @@ https://www.nielsen.tw/tags/index.html
 https://www.nielsen.tw/categories/index.html
 https://www.nielsen.tw/about/index.html
 https://www.nielsen.tw/
-https://www.nielsen.tw/tags/hexo/
 https://www.nielsen.tw/tags/browser/
 https://www.nielsen.tw/tags/chrome/
 https://www.nielsen.tw/tags/devtools/
+https://www.nielsen.tw/tags/hexo/
 https://www.nielsen.tw/tags/javascript/
 https://www.nielsen.tw/tags/vscode/
-https://www.nielsen.tw/categories/hexo/
 https://www.nielsen.tw/categories/browser/
+https://www.nielsen.tw/categories/hexo/
 https://www.nielsen.tw/categories/javascript/
 https://www.nielsen.tw/categories/vscode/
