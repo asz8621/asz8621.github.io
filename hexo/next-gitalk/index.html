@@ -40,13 +40,15 @@
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20get%20%20secret.png?alt=media&token=8e6db2fd-59a2-47e4-8195-d1c1bf480598">
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20OAuth%20secret%20value.png?alt=media&token=0f92d47b-b49a-41ab-b0b8-3b5640c8869b">
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20set%20up%20successfully.png?alt=media&token=390328d8-971e-4ff1-ab5d-2d2bdeaad901">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20hidden%20settings.png?alt=media&token=e5f878cd-0dfe-41f1-ae17-055a3dbf34a1">
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20Error%20Not%20Found..png?alt=media&token=f000db7a-07c5-454c-be52-3cbe5fc2418d">
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20%20No%20related%20issues%20found.png?alt=media&token=fe92c279-5d2c-420f-a962-eb7f78b55e99">
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20Be%20careful.png?alt=media&token=0c301d5c-fc76-455f-907b-883fd485d01d">
 <meta property="article:published_time" content="2024-09-22T08:50:23.000Z">
-<meta property="article:modified_time" content="2024-09-26T16:30:43.212Z">
+<meta property="article:modified_time" content="2024-09-30T17:02:22.147Z">
 <meta property="article:author" content="Nielsen">
 <meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Gitalk">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitHub%20header.png?alt=media&token=bc620665-dc2e-44ef-abcb-4409262ca333">
 
@@ -169,7 +171,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%BB%E5%86%8A-OAuth-Apps"><span class="nav-number">2.</span> <span class="nav-text">註冊 OAuth Apps</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%99%BB%E5%85%A5%E4%BD%A0%E7%9A%84-GitHub-%E9%BB%9E%E6%93%8A%E9%A0%AD%E5%83%8F"><span class="nav-number">2.1.</span> <span class="nav-text">登入你的 GitHub 點擊頭像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%9E%E9%81%B8-Settings"><span class="nav-number">2.2.</span> <span class="nav-text">點選 Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%9E%E9%81%B8-Developer-settings"><span class="nav-number">2.3.</span> <span class="nav-text">點選 Developer settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%A2%9E-OAuth-App"><span class="nav-number">2.4.</span> <span class="nav-text">新增 OAuth App</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A1%AB%E5%AF%AB-OAuth-App-%E8%B3%87%E6%96%99"><span class="nav-number">2.5.</span> <span class="nav-text">填寫 OAuth App 資料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E5%BE%97-Client-Secret"><span class="nav-number">2.6.</span> <span class="nav-text">取得 Client Secret</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next-config-yml-%E8%A8%AD%E5%AE%9A"><span class="nav-number">3.</span> <span class="nav-text">next&#x2F;_config.yml 設定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%8D%E4%BE%86%E5%B0%B1%E6%98%AF%E8%AA%AA%E8%AA%AA%E6%88%91%E5%8D%A1%E9%97%9C%E7%9A%84%E9%83%A8%E5%88%86%EF%BC%8C%E5%A4%A7%E6%A6%82%E6%9C%83%E5%87%BA%E7%8F%BE%E5%85%A9%E7%A8%AE%E7%8B%80%E6%B3%81%EF%BC%8C%E5%85%88%E4%BE%86%E8%AA%AA%E7%AC%AC%E4%B8%80%E7%A8%AE%E7%8B%80%E6%B3%81"><span class="nav-number">4.</span> <span class="nav-text">再來就是說說我卡關的部分，大概會出現兩種狀況，先來說第一種狀況</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8B%80%E6%B3%81%E4%B8%80%EF%BC%9AGitalk-%E5%87%BA%E7%8F%BE-Error-Not-Found"><span class="nav-number">4.1.</span> <span class="nav-text">狀況一：Gitalk 出現 Error Not Found</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8B%80%E6%B3%81%E4%BA%8C%EF%BC%9A%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E9%97%9C%E7%9A%84-issues-%E9%80%B2%E8%A1%8C%E8%A9%95%E8%AB%96"><span class="nav-number">4.2.</span> <span class="nav-text">狀況二：未找到相關的 issues 進行評論</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%BB%E5%86%8A-OAuth-Apps"><span class="nav-number">2.</span> <span class="nav-text">註冊 OAuth Apps</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%99%BB%E5%85%A5%E4%BD%A0%E7%9A%84-GitHub-%E9%BB%9E%E6%93%8A%E9%A0%AD%E5%83%8F"><span class="nav-number">2.1.</span> <span class="nav-text">登入你的 GitHub 點擊頭像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%9E%E9%81%B8-Settings"><span class="nav-number">2.2.</span> <span class="nav-text">點選 Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%9E%E9%81%B8-Developer-settings"><span class="nav-number">2.3.</span> <span class="nav-text">點選 Developer settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%A2%9E-OAuth-App"><span class="nav-number">2.4.</span> <span class="nav-text">新增 OAuth App</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A1%AB%E5%AF%AB-OAuth-App-%E8%B3%87%E6%96%99"><span class="nav-number">2.5.</span> <span class="nav-text">填寫 OAuth App 資料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E5%BE%97-Client-Secret"><span class="nav-number">2.6.</span> <span class="nav-text">取得 Client Secret</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next-config-yml-%E8%A8%AD%E5%AE%9A"><span class="nav-number">3.</span> <span class="nav-text">next&#x2F;_config.yml 設定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A0%81%E9%9D%A2%E9%81%B8%E6%93%87%E6%98%AF%E5%90%A6%E9%96%8B%E5%95%9F-Gitalk"><span class="nav-number">4.</span> <span class="nav-text">頁面選擇是否開啟 Gitalk</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%8D%E4%BE%86%E5%B0%B1%E6%98%AF%E8%AA%AA%E8%AA%AA%E6%88%91%E5%8D%A1%E9%97%9C%E7%9A%84%E9%83%A8%E5%88%86%EF%BC%8C%E5%A4%A7%E6%A6%82%E6%9C%83%E5%87%BA%E7%8F%BE%E5%85%A9%E7%A8%AE%E7%8B%80%E6%B3%81%EF%BC%8C%E5%85%88%E4%BE%86%E8%AA%AA%E7%AC%AC%E4%B8%80%E7%A8%AE%E7%8B%80%E6%B3%81"><span class="nav-number">5.</span> <span class="nav-text">再來就是說說我卡關的部分，大概會出現兩種狀況，先來說第一種狀況</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8B%80%E6%B3%81%E4%B8%80%EF%BC%9AGitalk-%E5%87%BA%E7%8F%BE-Error-Not-Found"><span class="nav-number">5.1.</span> <span class="nav-text">狀況一：Gitalk 出現 Error Not Found</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8B%80%E6%B3%81%E4%BA%8C%EF%BC%9A%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E9%97%9C%E7%9A%84-issues-%E9%80%B2%E8%A1%8C%E8%A9%95%E8%AB%96"><span class="nav-number">5.2.</span> <span class="nav-text">狀況二：未找到相關的 issues 進行評論</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -196,7 +198,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -332,6 +334,8 @@
 </ol>
 <p>到這邊就差不多設定完成了，再來就是將部落格重新整理後隨便選一篇文章拉到最下面去看一下有沒有設定成功，以下是成功的畫面：</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20set%20up%20successfully.png?alt=media&token=390328d8-971e-4ff1-ab5d-2d2bdeaad901" alt="Gitalk set up successfully"></p>
+<h2 id="頁面選擇是否開啟-Gitalk"><a href="#頁面選擇是否開啟-Gitalk" class="headerlink" title="頁面選擇是否開啟 Gitalk"></a>頁面選擇是否開啟 Gitalk</h2><p>當你完成設置後，可能會發現不僅文章底部會顯示 Gitalk，其他頁面也會出現。若要隱藏這些頁面的評論功能，只需在 <code>hexo/source</code> 下的 <code>about</code>、<code>categories</code> 和 <code>tags</code> 資料夾中，將設定改為 <code>comments: false</code> 即可。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20hidden%20settings.png?alt=media&token=e5f878cd-0dfe-41f1-ae17-055a3dbf34a1" alt="Gitalk hidden settings"></p>
 <hr>
 <h2 id="再來就是說說我卡關的部分，大概會出現兩種狀況，先來說第一種狀況"><a href="#再來就是說說我卡關的部分，大概會出現兩種狀況，先來說第一種狀況" class="headerlink" title="再來就是說說我卡關的部分，大概會出現兩種狀況，先來說第一種狀況"></a>再來就是說說我卡關的部分，大概會出現兩種狀況，先來說第一種狀況</h2><h3 id="狀況一：Gitalk-出現-Error-Not-Found"><a href="#狀況一：Gitalk-出現-Error-Not-Found" class="headerlink" title="狀況一：Gitalk 出現 Error Not Found"></a>狀況一：Gitalk 出現 Error Not Found</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Hexo%2FGitalk%20Error%20Not%20Found..png?alt=media&token=f000db7a-07c5-454c-be52-3cbe5fc2418d" alt="Gitalk Error Not Found"></p>
 <ol>
@@ -373,6 +377,7 @@
 
           <div class="post-tags">
               <a href="/tags/hexo/" rel="tag"># Hexo</a>
+              <a href="/tags/Gitalk/" rel="tag"># Gitalk</a>
           </div>
 
         

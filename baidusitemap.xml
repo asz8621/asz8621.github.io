@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.nielsen.tw/javascript/operation-syntax/</loc>
+    <lastmod>2024-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.nielsen.tw/hexo/next-gitalk/</loc>
+    <lastmod>2024-09-30</lastmod>
+  </url>
+  <url>
     <loc>https://www.nielsen.tw/javascript/functions/</loc>
     <lastmod>2024-09-27</lastmod>
   </url>
@@ -17,10 +25,6 @@
     <lastmod>2024-09-26</lastmod>
   </url>
   <url>
-    <loc>https://www.nielsen.tw/javascript/operation-syntax/</loc>
-    <lastmod>2024-09-26</lastmod>
-  </url>
-  <url>
     <loc>https://www.nielsen.tw/javascript/javascript-template-literals/</loc>
     <lastmod>2024-09-26</lastmod>
   </url>
@@ -30,10 +34,6 @@
   </url>
   <url>
     <loc>https://www.nielsen.tw/javascript/fundamentals/</loc>
-    <lastmod>2024-09-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nielsen.tw/hexo/next-gitalk/</loc>
     <lastmod>2024-09-26</lastmod>
   </url>
   <url>
