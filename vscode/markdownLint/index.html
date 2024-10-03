@@ -25,28 +25,31 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.nielsen.tw","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="學習如何在 JavaScript 中處理物件，包括根據條件過濾和排序物件的實用方法，讓你的程式碼更加靈活與高效。">
+    <meta name="description" content="學習如何使用 MarkdownLint 在 Visual Studio Code 中檢查 Markdown 文件，保持筆記風格一致性與專業性。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript 物件實戰用法">
-<meta property="og:url" content="https://www.nielsen.tw/javascript/object-practical-uses/index.html">
+<meta property="og:title" content="Hexo 筆記好用套件：MarkdownLint">
+<meta property="og:url" content="https://www.nielsen.tw/vscode/markdownLint/index.html">
 <meta property="og:site_name" content="Nielsen Blog">
-<meta property="og:description" content="學習如何在 JavaScript 中處理物件，包括根據條件過濾和排序物件的實用方法，讓你的程式碼更加靈活與高效。">
+<meta property="og:description" content="學習如何使用 MarkdownLint 在 Visual Studio Code 中檢查 Markdown 文件，保持筆記風格一致性與專業性。">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2024-09-20T15:08:57.000Z">
-<meta property="article:modified_time" content="2024-09-20T15:20:09.965Z">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/VS_Code%2FMarkdownLint%20error.png?alt=media&token=693841db-27de-4242-a127-3c2586227006">
+<meta property="article:published_time" content="2024-09-30T05:11:23.000Z">
+<meta property="article:modified_time" content="2024-10-03T16:20:48.119Z">
 <meta property="article:author" content="Nielsen">
-<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="VSCode">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/VS_Code%2FMarkdownLint%20error.png?alt=media&token=693841db-27de-4242-a127-3c2586227006">
 
 
-<link rel="canonical" href="https://www.nielsen.tw/javascript/object-practical-uses/">
+<link rel="canonical" href="https://www.nielsen.tw/vscode/markdownLint/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://www.nielsen.tw/javascript/object-practical-uses/","path":"javascript/object-practical-uses/","title":"JavaScript 物件實戰用法"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://www.nielsen.tw/vscode/markdownLint/","path":"vscode/markdownLint/","title":"Hexo 筆記好用套件：MarkdownLint"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>JavaScript 物件實戰用法 | Nielsen Blog</title>
+<title>Hexo 筆記好用套件：MarkdownLint | Nielsen Blog</title>
   
 
 
@@ -157,7 +160,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%A9%E4%BB%B6%E6%89%BE%E7%9B%B8%E5%B0%8D%E6%87%89%E7%9A%84%E5%80%BC"><span class="nav-number">1.</span> <span class="nav-text">物件找相對應的值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%A9%E4%BB%B6%E6%8E%92%E5%BA%8F"><span class="nav-number">2.</span> <span class="nav-text">物件排序</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MarkdownLint-%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">MarkdownLint 是什麼？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E8%A6%81%E7%89%B9%E9%BB%9E"><span class="nav-number">3.</span> <span class="nav-text">主要特點</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%87%AA%E8%A8%82%E8%A6%8F%E5%89%87"><span class="nav-number">3.1.</span> <span class="nav-text">如何自訂規則</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%9D"><span class="nav-number">4.</span> <span class="nav-text">如何安裝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E9%8C%AF%E8%AA%A4"><span class="nav-number">5.</span> <span class="nav-text">如何查看錯誤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%90%E8%AB%96"><span class="nav-number">6.</span> <span class="nav-text">結論</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -222,7 +225,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://www.nielsen.tw/javascript/object-practical-uses/">
+    <link itemprop="mainEntityOfPage" href="https://www.nielsen.tw/vscode/markdownLint/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -235,12 +238,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="JavaScript 物件實戰用法 | Nielsen Blog">
-      <meta itemprop="description" content="學習如何在 JavaScript 中處理物件，包括根據條件過濾和排序物件的實用方法，讓你的程式碼更加靈活與高效。">
+      <meta itemprop="name" content="Hexo 筆記好用套件：MarkdownLint | Nielsen Blog">
+      <meta itemprop="description" content="學習如何使用 MarkdownLint 在 Visual Studio Code 中檢查 Markdown 文件，保持筆記風格一致性與專業性。">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          JavaScript 物件實戰用法
+          Hexo 筆記好用套件：MarkdownLint
         </h1>
 
         <div class="post-meta-container">
@@ -251,7 +254,7 @@
       </span>
       <span class="post-meta-item-text">發表於</span>
 
-      <time title="創建時間：2024-09-20 23:08:57" itemprop="dateCreated datePublished" datetime="2024-09-20T23:08:57+08:00">2024-09-20</time>
+      <time title="創建時間：2024-09-30 13:11:23" itemprop="dateCreated datePublished" datetime="2024-09-30T13:11:23+08:00">2024-09-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -259,24 +262,49 @@
       </span>
       <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/javascript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a>
+          <a href="/categories/vscode/" itemprop="url" rel="index"><span itemprop="name">VSCode</span></a>
         </span>
     </span>
 
   
 </div>
 
-            <div class="post-description">學習如何在 JavaScript 中處理物件，包括根據條件過濾和排序物件的實用方法，讓你的程式碼更加靈活與高效。</div>
+            <div class="post-description">學習如何使用 MarkdownLint 在 Visual Studio Code 中檢查 Markdown 文件，保持筆記風格一致性與專業性。</div>
         </div>
       </header>
 
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="物件找相對應的值"><a href="#物件找相對應的值" class="headerlink" title="物件找相對應的值"></a>物件找相對應的值</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> betItems = &#123;</span><br><span class="line">  <span class="attr">bank</span>: &#123;</span><br><span class="line">    <span class="attr">abbr</span>: <span class="string">&quot;B&quot;</span>,</span><br><span class="line">    <span class="attr">detail</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">id</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="attr">odds</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">switch</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">win</span>: <span class="literal">false</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">big</span>: &#123;</span><br><span class="line">    <span class="attr">abbr</span>: <span class="string">&quot;BG&quot;</span>,</span><br><span class="line">    <span class="attr">detail</span>: <span class="number">500</span>,</span><br><span class="line">    <span class="attr">id</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="attr">odds</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">switch</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">win</span>: <span class="literal">false</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> filteredItems = <span class="title class_">Object</span>.<span class="title function_">keys</span>(betItems).<span class="title function_">reduce</span>(<span class="function">(<span class="params">acc, val</span>) =&gt;</span> </span><br><span class="line">  (betItems[val][<span class="string">&#x27;detail&#x27;</span>] &gt; <span class="number">0</span> ? acc : &#123;</span><br><span class="line">    ...acc,</span><br><span class="line">    [val]: betItems[val]</span><br><span class="line">  &#125;), </span><br><span class="line">&#123;&#125;);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(filteredItems);</span><br></pre></td></tr></table></figure>
-
-<h2 id="物件排序"><a href="#物件排序" class="headerlink" title="物件排序"></a>物件排序</h2><p>首先，使用 <code>Object.entries()</code> 方法將物件轉換成二維陣列。接著，使用 <code>Array.sort()</code> 方法依據第二個元素進行排序，最後透過 <code>Object.fromEntries()</code> 方法將排序後的二維陣列轉換回物件形式。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">  <span class="attr">banana</span>: <span class="number">2</span>,</span><br><span class="line">  <span class="attr">apple</span>: <span class="number">4</span>,</span><br><span class="line">  <span class="attr">pear</span>: <span class="number">1</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> obj2 = &#123;</span><br><span class="line">  <span class="attr">banana</span>: &#123;</span><br><span class="line">    <span class="attr">key</span>: <span class="number">2</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">apple</span>: &#123;</span><br><span class="line">    <span class="attr">key</span>: <span class="number">4</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">pear</span>: &#123;</span><br><span class="line">    <span class="attr">key</span>: <span class="number">1</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 將物件轉換成二維陣列</span></span><br><span class="line"><span class="keyword">const</span> arr = <span class="title class_">Object</span>.<span class="title function_">entries</span>(obj); <span class="comment">// [ [&quot;banana&quot;, 2], [&quot;apple&quot;, 4], [&quot;pear&quot;, 1] ]</span></span><br><span class="line"><span class="keyword">const</span> arr2 = <span class="title class_">Object</span>.<span class="title function_">entries</span>(obj2);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 依照第二個元素（數字）進行排序</span></span><br><span class="line">arr.<span class="title function_">sort</span>(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a[<span class="number">1</span>] - b[<span class="number">1</span>]); <span class="comment">// [ [&quot;pear&quot;, 1], [&quot;banana&quot;, 2], [&quot;apple&quot;, 4] ]</span></span><br><span class="line">arr2.<span class="title function_">sort</span>(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a[<span class="number">1</span>].<span class="property">key</span> - b[<span class="number">1</span>].<span class="property">key</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 將排序後的二維陣列轉換回物件形式</span></span><br><span class="line"><span class="keyword">const</span> sortedObj = <span class="title class_">Object</span>.<span class="title function_">fromEntries</span>(arr); <span class="comment">// &#123; pear: 1, banana: 2, apple: 4 &#125;</span></span><br><span class="line"><span class="keyword">const</span> sortedObj2 = <span class="title class_">Object</span>.<span class="title function_">fromEntries</span>(arr2);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sortedObj);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sortedObj2);</span><br></pre></td></tr></table></figure>
+    <div class="post-body" itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在撰寫 Hexo 筆記時，Markdown 語法可以讓文章結構清晰、美觀。然而，隨著內容的增加，保持格式的一致性與規範性可能變得困難。此時，一個好用的套件就顯得尤為重要。今天，我要介紹的就是 <strong>MarkdownLint</strong>，這是一款能有效檢查 Markdown 文件的優秀工具。</p>
+<h2 id="MarkdownLint-是什麼？"><a href="#MarkdownLint-是什麼？" class="headerlink" title="MarkdownLint 是什麼？"></a>MarkdownLint 是什麼？</h2><p>MarkdownLint 是一個 Visual Studio Code 擴展，是可以協助用戶檢查 Markdown 文檔的語法和格式。它能自動識別並報告潛在的錯誤和不一致之處，使寫作過程更加流暢。</p>
+<h2 id="主要特點"><a href="#主要特點" class="headerlink" title="主要特點"></a>主要特點</h2><ol>
+<li><p><strong>實時檢查</strong>：MarkdownLint 在編輯 Markdown 筆記時會即時檢查語法，並在出現問題時提供提示，讓你能隨時修正錯誤，避免在發佈後才發現問題。</p>
+</li>
+<li><p><strong>可自訂規則</strong>：根據需求設置檢查規則。以下是自訂規則的步驟：</p>
+<p><strong>文件參考</strong>：<a target="_blank" rel="noopener" href="https://github.com/DavidAnson/markdownlint?tab=readme-ov-file#rules--aliases">MarkdownLint 規則與別名</a></p>
+<h3 id="如何自訂規則"><a href="#如何自訂規則" class="headerlink" title="如何自訂規則"></a>如何自訂規則</h3><ol>
+<li><p><strong>創建配置文件</strong>：<br>在 Markdown 項目根目錄下創建一個名為 <code>.markdownlint.json</code> 的文件，以定義自訂規則。</p>
+</li>
+<li><p><strong>編輯配置文件</strong>：<br>在 <code>.markdownlint.json</code> 中添加或禁用特定規則。以下是一些常見的參數設定：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;default&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;MD013&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span> <span class="comment">// 禁用行長度限制</span></span><br><span class="line">  <span class="attr">&quot;MD029&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span>  <span class="comment">// 禁用列表項前空格檢查</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>儲存與應用</strong>：<br>保存 <code>.markdownlint.json</code> 文件後，MarkdownLint 將自動加載這些設定，並在編輯 Markdown 文件時應用相應的規則。</p>
+</li>
+</ol>
+</li>
+<li><p><strong>快速安裝</strong>：此擴展安裝簡便，並且在 Visual Studio Code 中運行流暢，無需額外配置，讓你能快速上手。</p>
+</li>
+</ol>
+<h2 id="如何安裝"><a href="#如何安裝" class="headerlink" title="如何安裝"></a>如何安裝</h2><ol>
+<li>打開 Visual Studio Code。</li>
+<li>前往擴展市場（Extensions Marketplace）。</li>
+<li>搜尋 “MarkdownLint” 或直接訪問 <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint">MarkdownLint</a>。</li>
+<li>點擊安裝即可。</li>
+</ol>
+<h2 id="如何查看錯誤"><a href="#如何查看錯誤" class="headerlink" title="如何查看錯誤"></a>如何查看錯誤</h2><p>當出現問題時，MarkdownLint 會在有問題的行上顯示<code>黃色波浪號</code>，這時你可以依照錯誤提示來進行修正，統一寫作風格。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/VS_Code%2FMarkdownLint%20error.png?alt=media&token=693841db-27de-4242-a127-3c2586227006" alt="MarkdownLint error"></p>
+<h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><p>對於使用 Hexo 撰寫筆記的朋友們來說，MarkdownLint 是一個不可或缺的工具。它不僅提高了寫作效率，還幫助我們保持內容的一致性與質量。無論你是新手還是資深寫手，都能從中受益。快來試試這個好用的套件，讓你的 Hexo 筆記更上一層樓吧！</p>
 
     </div>
 
@@ -294,7 +322,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>文章連結：</strong>
-      <a href="https://www.nielsen.tw/javascript/object-practical-uses/" title="JavaScript 物件實戰用法">https://www.nielsen.tw/javascript/object-practical-uses/</a>
+      <a href="https://www.nielsen.tw/vscode/markdownLint/" title="Hexo 筆記好用套件：MarkdownLint">https://www.nielsen.tw/vscode/markdownLint/</a>
   </li>
   <li class="post-copyright-license">
       <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
@@ -303,21 +331,19 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/javascript/" rel="tag"># JavaScript</a>
+              <a href="/tags/hexo/" rel="tag"># Hexo</a>
+              <a href="/tags/vscode/" rel="tag"># VSCode</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/hexo/next-tags-and-buttons/" rel="prev" title="Hexo NexT 標籤和按鈕">
-                  <i class="fa fa-angle-left"></i> Hexo NexT 標籤和按鈕
+                <a href="/javascript/dataset/" rel="prev" title="JavaScript dataset 應用">
+                  <i class="fa fa-angle-left"></i> JavaScript dataset 應用
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/hexo/next-gitalk/" rel="next" title="Hexo NexT 開啟 Gitalk 留言版">
-                  Hexo NexT 開啟 Gitalk 留言版 <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -393,7 +419,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
 
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"asz8621","repo":"asz8621.github.io","client_id":"Ov23lihBbo3WzJoRjZsa","client_secret":"c592d79eaf88c14b2d87d53ff195c7df70d6a020","admin_user":"asz8621","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","labels":"Gitalk","language":"zh-TW","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"110b1180c119db80efbb69633bd8dc3e"}</script>
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"asz8621","repo":"asz8621.github.io","client_id":"Ov23lihBbo3WzJoRjZsa","client_secret":"c592d79eaf88c14b2d87d53ff195c7df70d6a020","admin_user":"asz8621","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","labels":"Gitalk","language":"zh-TW","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"227be51112637fee9d70ed22d5a57f5d"}</script>
 <script src="/js/third-party/comments/gitalk.js"></script>
 
 </body>

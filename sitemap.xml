@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.nielsen.tw/vscode/markdownLint/</loc>
+    
+    <lastmod>2024-10-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/javascript/ajax/</loc>
+    
+    <lastmod>2024-10-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/vscode/template-literals-configuration/</loc>
+    
+    <lastmod>2024-10-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/hexo/next-gitalk/</loc>
+    
+    <lastmod>2024-10-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/javascript/axios/</loc>
+    
+    <lastmod>2024-10-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nielsen.tw/javascript/dataset/</loc>
     
     <lastmod>2024-10-03</lastmod>
@@ -47,34 +92,7 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/javascript/axios/</loc>
-    
-    <lastmod>2024-10-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nielsen.tw/javascript/ajax/</loc>
-    
-    <lastmod>2024-10-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nielsen.tw/javascript/operation-syntax/</loc>
-    
-    <lastmod>2024-09-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nielsen.tw/hexo/next-gitalk/</loc>
     
     <lastmod>2024-09-30</lastmod>
     
@@ -263,15 +281,6 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/vscode/template-literals-configuration/</loc>
-    
-    <lastmod>2024-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nielsen.tw/javascript/event/</loc>
     
     <lastmod>2024-09-19</lastmod>
@@ -288,20 +297,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://www.nielsen.tw/tags/javascript/</loc>
-    <lastmod>2024-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nielsen.tw/tags/axios/</loc>
-    <lastmod>2024-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://www.nielsen.tw/tags/browser/</loc>
@@ -332,14 +327,21 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/tags/hexo/</loc>
+    <loc>https://www.nielsen.tw/tags/javascript/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/tags/Gitalk/</loc>
+    <loc>https://www.nielsen.tw/tags/axios/</loc>
+    <lastmod>2024-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/tags/hexo/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -353,7 +355,14 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/tags/AJAX/</loc>
+    <loc>https://www.nielsen.tw/tags/Gitalk/</loc>
+    <lastmod>2024-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/tags/GitHub/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -366,14 +375,14 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://www.nielsen.tw/categories/javascript/</loc>
+    <loc>https://www.nielsen.tw/tags/AJAX/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
+  
+
   
   <url>
     <loc>https://www.nielsen.tw/categories/browser/</loc>
@@ -384,6 +393,13 @@
   
   <url>
     <loc>https://www.nielsen.tw/categories/cordova/</loc>
+    <lastmod>2024-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/categories/javascript/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
