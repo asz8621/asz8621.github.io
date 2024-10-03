@@ -1,3 +1,4 @@
+https://www.nielsen.tw/javascript/array-iteration-and-transformation/
 https://www.nielsen.tw/cordova/integrate-vue-cordova/
 https://www.nielsen.tw/vscode/markdownLint/
 https://www.nielsen.tw/javascript/ajax/
@@ -16,7 +17,6 @@ https://www.nielsen.tw/javascript/functions/
 https://www.nielsen.tw/hexo/next-tags-and-buttons/
 https://www.nielsen.tw/404.html
 https://www.nielsen.tw/javascript/array-practical-uses/
-https://www.nielsen.tw/javascript/array-iteration-and-transformation/
 https://www.nielsen.tw/javascript/javascript-template-literals/
 https://www.nielsen.tw/javascript/changes-original-array-functions/
 https://www.nielsen.tw/javascript/fundamentals/
@@ -33,18 +33,18 @@ https://www.nielsen.tw/javascript/event/
 https://www.nielsen.tw/
 https://www.nielsen.tw/tags/javascript/
 https://www.nielsen.tw/tags/axios/
-https://www.nielsen.tw/tags/hexo/
 https://www.nielsen.tw/tags/cordova/
-https://www.nielsen.tw/tags/vscode/
+https://www.nielsen.tw/tags/hexo/
 https://www.nielsen.tw/tags/Gitalk/
 https://www.nielsen.tw/tags/GitHub/
+https://www.nielsen.tw/tags/vscode/
 https://www.nielsen.tw/tags/vue/
 https://www.nielsen.tw/tags/AJAX/
 https://www.nielsen.tw/tags/browser/
 https://www.nielsen.tw/tags/chrome/
 https://www.nielsen.tw/tags/devtools/
 https://www.nielsen.tw/categories/javascript/
-https://www.nielsen.tw/categories/hexo/
 https://www.nielsen.tw/categories/cordova/
+https://www.nielsen.tw/categories/hexo/
 https://www.nielsen.tw/categories/vscode/
 https://www.nielsen.tw/categories/browser/

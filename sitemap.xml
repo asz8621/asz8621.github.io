@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.nielsen.tw/javascript/array-iteration-and-transformation/</loc>
+    
+    <lastmod>2024-10-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nielsen.tw/cordova/integrate-vue-cordova/</loc>
     
     <lastmod>2024-10-03</lastmod>
@@ -164,15 +173,6 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/javascript/array-iteration-and-transformation/</loc>
-    
-    <lastmod>2024-09-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nielsen.tw/javascript/javascript-template-literals/</loc>
     
     <lastmod>2024-09-26</lastmod>
@@ -313,13 +313,6 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/tags/hexo/</loc>
-    <lastmod>2024-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nielsen.tw/tags/cordova/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -327,7 +320,7 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/tags/vscode/</loc>
+    <loc>https://www.nielsen.tw/tags/hexo/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -342,6 +335,13 @@
   
   <url>
     <loc>https://www.nielsen.tw/tags/GitHub/</loc>
+    <lastmod>2024-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/tags/vscode/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -392,14 +392,14 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/categories/hexo/</loc>
+    <loc>https://www.nielsen.tw/categories/cordova/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/categories/cordova/</loc>
+    <loc>https://www.nielsen.tw/categories/hexo/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
