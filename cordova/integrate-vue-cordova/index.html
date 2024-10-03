@@ -49,7 +49,7 @@
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20install%20to%20emulator.png?alt=media&token=3f073a90-adcc-451d-ac8e-1268fba2a1a6">
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20to%20emulator%20Installation%20successful.png?alt=media&token=cfe27364-cd07-4654-a867-ac1d4af7c304">
 <meta property="article:published_time" content="2024-09-27T04:47:19.000Z">
-<meta property="article:modified_time" content="2024-10-03T12:05:52.933Z">
+<meta property="article:modified_time" content="2024-10-03T16:28:42.121Z">
 <meta property="article:author" content="Nielsen">
 <meta property="article:tag" content="cordova">
 <meta property="article:tag" content="vue">
@@ -303,27 +303,21 @@
 <li><code>HelloWorld</code>：應用名稱</li>
 </ul>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20folder%20structure.png?alt=media&token=097f4862-bc4d-47b7-b330-66f6913caa13" alt="cordova folder structure"></p>
-<hr>
 <h2 id="新增平台-iOS-Android"><a href="#新增平台-iOS-Android" class="headerlink" title="新增平台 (iOS &amp; Android)"></a>新增平台 (iOS &amp; Android)</h2><p>接下來，進入專案資料夾並新增 iOS 和 Android 平台：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> hello</span><br><span class="line">cordova platform add ios</span><br><span class="line">cordova platform add android</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20platform.png?alt=media&token=f52d312f-1502-4764-b327-6c3d7e8d3bb5" alt="cordova platform"></p>
 <p>這將會在專案中新增許多資料夾和檔案，例如 <code>node_modules</code> 等等。</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20folder%20structure%20platform.png?alt=media&token=0a702016-5e53-4269-92e1-52f526d684e8" alt="cordova folder structure platform"></p>
-<hr>
 <h2 id="查詢目前的平台清單"><a href="#查詢目前的平台清單" class="headerlink" title="查詢目前的平台清單"></a>查詢目前的平台清單</h2><p>要檢查目前已安裝的平台，使用以下命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cordova platform <span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
 
 <p>目前只安裝了 Android 平台。</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20platform%20ls.png?alt=media&token=8b14dab0-eabd-42c0-8bd2-95fc89a06210" alt="cordova platform ls"></p>
-<hr>
 <h2 id="移除某個平台"><a href="#移除某個平台" class="headerlink" title="移除某個平台"></a>移除某個平台</h2><p>如果需要移除某個平台（例如 Android），可以使用以下命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cordova platform <span class="built_in">rm</span> android</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20platform%20rm%20android.png?alt=media&token=497b0045-6051-4286-bf8b-cef322a0392d" alt="cordova platform rm android"></p>
-<hr>
-<p>當然可以！以下是優化後的段落，已考慮到您無法在 macOS 上測試 iOS：</p>
-<hr>
 <h2 id="建立-APP"><a href="#建立-APP" class="headerlink" title="建立 APP"></a>建立 APP</h2><p>使用以下命令來建立應用程式：</p>
 <ul>
 <li><p>建立所有已安裝平台的 APP：</p>
@@ -336,30 +330,25 @@
 </ul>
 <p>這將生成 Android 的 APK 檔案，您可以將其安裝到任何 Android 設備或模擬器中進行測試。</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20apk%20path.png?alt=media&token=215d4a3c-0bd2-45b0-ac23-3fd421af366b" alt="cordova apk path"></p>
-<hr>
 <h2 id="安裝測試-APP"><a href="#安裝測試-APP" class="headerlink" title="安裝測試 APP"></a>安裝測試 APP</h2><p>將生成的 <code>app-debug.apk</code> 檔案放入任何手機模擬器中即可進行測試。</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20apk.png?alt=media&token=9846a015-2bb5-43f7-80ac-544a09ec6abd" alt="cordova apk"></p>
 <p>這是 APP 安裝完成後開啟的畫面。</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20startup%20screen.png?alt=media&token=1cb5435f-a96e-4878-ae15-243c368e36dc" alt="cordova startup screen"></p>
-<hr>
 <h2 id="加入-Vue"><a href="#加入-Vue" class="headerlink" title="加入 Vue"></a>加入 Vue</h2><p>在專案的根目錄下，創建一個 Vue 專案。請根據需求選擇適合的 Vue 版本（目前使用的是 Vue 3）。</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcreate%20vue.png?alt=media&token=0ec78cd3-2fd1-4d1f-b677-1ab21b09c9d4" alt="create vue"></p>
 <p>選擇完成後，讓其執行一下。</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcreate%20vue%20process.png?alt=media&token=dabfe91d-5346-42cd-9c2d-0a0402132d37" alt="create vue process"></p>
 <p>執行完成後，會多一個 Vue 的資料夾。</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20add%20vue.png?alt=media&token=d85c15cb-b9f6-47cd-8a0f-e3585964b5cc" alt="cordova add vue"></p>
-<hr>
 <h2 id="修改-vue-config-js"><a href="#修改-vue-config-js" class="headerlink" title="修改 vue.config.js"></a>修改 vue.config.js</h2><p>在 Vue 專案中，找到並修改 <code>vue.config.js</code> 檔案：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = <span class="title function_">defineConfig</span>(&#123;</span><br><span class="line">  <span class="attr">transpileDependencies</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">publicPath</span>: <span class="string">&#x27;./&#x27;</span>, <span class="comment">// 一定要加 .</span></span><br><span class="line">  <span class="attr">outputDir</span>: <span class="string">&#x27;../www&#x27;</span>, <span class="comment">// 輸出位置</span></span><br><span class="line">  <span class="attr">productionSourceMap</span>: <span class="literal">false</span>, <span class="comment">// 不產生 map 文件</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20settings%20vue%20config.png?alt=media&token=955fa978-3033-4a5b-8592-28d5a8d8538d" alt="cordova settings vue config"></p>
-<hr>
 <h2 id="建置-Vue"><a href="#建置-Vue" class="headerlink" title="建置 Vue"></a>建置 Vue</h2><p>使用以下命令來建置 Vue 專案：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
 
 <p>這樣會在外層的 <code>www</code> 資料夾下生成 HTML、CSS、JS 等檔案。</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/JavaScript%2Fcordova%20build%20vue.png?alt=media&token=6f60fbb2-d481-4529-941e-93086d63aa86" alt="cordova build vue"></p>
-<hr>
 <h2 id="將-Vue-封裝成-APP"><a href="#將-Vue-封裝成-APP" class="headerlink" title="將 Vue 封裝成 APP"></a>將 Vue 封裝成 APP</h2><p>再次執行 Cordova 建置命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cordova build</span><br></pre></td></tr></table></figure>
 
