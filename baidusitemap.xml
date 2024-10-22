@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.nielsen.tw/seo/html-head/</loc>
+    <lastmod>2024-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.nielsen.tw/vue/seo-meta/</loc>
+    <lastmod>2024-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.nielsen.tw/vue/VeeValidate-v3/</loc>
+    <lastmod>2024-10-22</lastmod>
+  </url>
+  <url>
     <loc>https://www.nielsen.tw/vue/use-v-for-with-v-if/</loc>
     <lastmod>2024-10-21</lastmod>
   </url>

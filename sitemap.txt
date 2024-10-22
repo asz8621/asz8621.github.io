@@ -1,3 +1,6 @@
+https://www.nielsen.tw/seo/html-head/
+https://www.nielsen.tw/vue/seo-meta/
+https://www.nielsen.tw/vue/VeeValidate-v3/
 https://www.nielsen.tw/vue/use-v-for-with-v-if/
 https://www.nielsen.tw/vue/for-loop/
 https://www.nielsen.tw/vue/data-binding/
@@ -56,15 +59,16 @@ https://www.nielsen.tw/tags/javascript/
 https://www.nielsen.tw/tags/axios/
 https://www.nielsen.tw/tags/hexo/
 https://www.nielsen.tw/tags/cordova/
+https://www.nielsen.tw/tags/vscode/
 https://www.nielsen.tw/tags/Gitalk/
 https://www.nielsen.tw/tags/GitHub/
-https://www.nielsen.tw/tags/vscode/
 https://www.nielsen.tw/tags/vue/
 https://www.nielsen.tw/tags/seo/
-https://www.nielsen.tw/tags/AJAX/
+https://www.nielsen.tw/tags/HTML/
 https://www.nielsen.tw/tags/browser/
 https://www.nielsen.tw/tags/chrome/
 https://www.nielsen.tw/tags/devtools/
+https://www.nielsen.tw/tags/AJAX/
 https://www.nielsen.tw/categories/javascript/
 https://www.nielsen.tw/categories/hexo/
 https://www.nielsen.tw/categories/cordova/
