@@ -58,10 +58,10 @@ https://www.nielsen.tw/javascript/object-methods/
 https://www.nielsen.tw/javascript/object-practical-uses/
 https://www.nielsen.tw/javascript/event/
 https://www.nielsen.tw/
+https://www.nielsen.tw/tags/cordova/
+https://www.nielsen.tw/tags/hexo/
 https://www.nielsen.tw/tags/javascript/
 https://www.nielsen.tw/tags/axios/
-https://www.nielsen.tw/tags/hexo/
-https://www.nielsen.tw/tags/cordova/
 https://www.nielsen.tw/tags/Gitalk/
 https://www.nielsen.tw/tags/GitHub/
 https://www.nielsen.tw/tags/vscode/
@@ -72,9 +72,9 @@ https://www.nielsen.tw/tags/AJAX/
 https://www.nielsen.tw/tags/browser/
 https://www.nielsen.tw/tags/chrome/
 https://www.nielsen.tw/tags/devtools/
-https://www.nielsen.tw/categories/javascript/
-https://www.nielsen.tw/categories/hexo/
 https://www.nielsen.tw/categories/cordova/
+https://www.nielsen.tw/categories/hexo/
+https://www.nielsen.tw/categories/javascript/
 https://www.nielsen.tw/categories/vscode/
 https://www.nielsen.tw/categories/vue/
 https://www.nielsen.tw/categories/seo/

@@ -542,14 +542,7 @@
 
   
   <url>
-    <loc>https://www.nielsen.tw/tags/javascript/</loc>
-    <lastmod>2024-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nielsen.tw/tags/axios/</loc>
+    <loc>https://www.nielsen.tw/tags/cordova/</loc>
     <lastmod>2024-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -563,7 +556,14 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/tags/cordova/</loc>
+    <loc>https://www.nielsen.tw/tags/javascript/</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/tags/axios/</loc>
     <lastmod>2024-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -642,7 +642,7 @@
 
   
   <url>
-    <loc>https://www.nielsen.tw/categories/javascript/</loc>
+    <loc>https://www.nielsen.tw/categories/cordova/</loc>
     <lastmod>2024-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -656,7 +656,7 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/categories/cordova/</loc>
+    <loc>https://www.nielsen.tw/categories/javascript/</loc>
     <lastmod>2024-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
