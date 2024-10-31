@@ -34,7 +34,7 @@
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Vue%2FVue%20Ref.png?alt=media&token=2736a3ed-0615-4fb5-aa4f-82501bbbda9c">
 <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Vue%2FVue%20reactive.png?alt=media&token=e09f6c94-6273-4cf2-ad6f-2a10ca0e5d63">
 <meta property="article:published_time" content="2024-10-24T08:26:27.000Z">
-<meta property="article:modified_time" content="2024-10-26T06:47:46.745Z">
+<meta property="article:modified_time" content="2024-10-31T14:26:22.631Z">
 <meta property="article:author" content="Nielsen">
 <meta property="article:tag" content="Vue">
 <meta name="twitter:card" content="summary">
@@ -274,7 +274,6 @@
 
 <p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Vue%2FVue%20Ref.png?alt=media&token=2736a3ed-0615-4fb5-aa4f-82501bbbda9c" alt="Vue ref"></p>
 <h3 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h3><p>如上圖所示，<code>ref</code> 的使用方式簡單明瞭，並且能處理多種類型的數據。</p>
-<p>這是一篇關於 Vue 的 <code>reactive</code> 的優化文章，以下是修改後的版本：</p>
 <h2 id="reactive"><a href="#reactive" class="headerlink" title="reactive"></a><code>reactive</code></h2><p><code>reactive</code> 用於創建響應式數據對象，特別適合用於複雜數據結構，讓管理多個屬性變得更加簡便。</p>
 <h3 id="使用範例-1"><a href="#使用範例-1" class="headerlink" title="使用範例"></a>使用範例</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script setup&gt;</span><br><span class="line"><span class="keyword">import</span> &#123; reactive &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> state = <span class="title function_">reactive</span>(&#123;</span><br><span class="line">    <span class="attr">message</span>: <span class="string">&#x27;Hello, Vue 3 reactive!&#x27;</span>,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;State:&#x27;</span>, state);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Message:&#x27;</span>, state.<span class="property">message</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
