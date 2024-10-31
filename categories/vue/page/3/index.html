@@ -24,31 +24,26 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.nielsen.tw","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="這篇文章介紹了在 Vue 應用中解決 non-passive 事件監聽器警告的兩種有效方法，確保流暢的用戶互動。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="解決 non-passive 事件監聽器警告">
-<meta property="og:url" content="https://www.nielsen.tw/vue/non-passive-warning/index.html">
+    <meta name="description" content="提供個人前端技術、實用技巧與深入分析，讓你的前端開發之旅充滿樂趣。探索 Vue、React、JavaScript 等熱門技術的最新趨勢與實戰技巧。讓我們幫助你使編程更高效、更有趣！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nielsen Blog">
+<meta property="og:url" content="https://www.nielsen.tw/categories/vue/page/3/index.html">
 <meta property="og:site_name" content="Nielsen Blog">
-<meta property="og:description" content="這篇文章介紹了在 Vue 應用中解決 non-passive 事件監聽器警告的兩種有效方法，確保流暢的用戶互動。">
+<meta property="og:description" content="提供個人前端技術、實用技巧與深入分析，讓你的前端開發之旅充滿樂趣。探索 Vue、React、JavaScript 等熱門技術的最新趨勢與實戰技巧。讓我們幫助你使編程更高效、更有趣！">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Vue%2Fdefault-passive-events%20error.gif?alt=media&token=114c7f85-0479-4ccf-9eaf-547c01a65c28">
-<meta property="article:published_time" content="2024-10-12T14:22:30.000Z">
-<meta property="article:modified_time" content="2024-10-13T14:56:36.027Z">
 <meta property="article:author" content="Nielsen">
-<meta property="article:tag" content="JavaScript">
-<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="前端技術, Vue, React, JavaScript, CSS, Windows, 網頁開發, 技術筆記">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Vue%2Fdefault-passive-events%20error.gif?alt=media&token=114c7f85-0479-4ccf-9eaf-547c01a65c28">
 
 
-<link rel="canonical" href="https://www.nielsen.tw/vue/non-passive-warning/">
+<link rel="canonical" href="https://www.nielsen.tw/categories/vue/page/3/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://www.nielsen.tw/vue/non-passive-warning/","path":"vue/non-passive-warning/","title":"解決 non-passive 事件監聽器警告"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-TW","comments":"","permalink":"","path":"categories/vue/page/3/index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>解決 non-passive 事件監聽器警告 | Nielsen Blog</title>
+<title>分類: Vue | Nielsen Blog</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-06HH7QMFMQ"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-06HH7QMFMQ","only_pageview":false,"measure_protocol_api_secret":null}</script>
@@ -138,7 +133,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目錄
@@ -151,7 +146,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E4%BD%BF%E7%94%A8-passive-%E4%BF%AE%E9%A3%BE%E7%AC%A6"><span class="nav-number">2.</span> <span class="nav-text">方法一：使用 .passive 修飾符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%9A%E4%BD%BF%E7%94%A8-default-passive-events-%E5%A5%97%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">方法二：使用 default-passive-events 套件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85"><span class="nav-number">3.1.</span> <span class="nav-text">注意事項</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -206,139 +200,54 @@
 
     </div>
 
-    <div class="main-inner post posts-expand">
+    <div class="main-inner category posts-collapse">
 
 
   
-
-
-<div class="post-block">
   
   
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://www.nielsen.tw/vue/non-passive-warning/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Nielsen">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Nielsen Blog">
-      <meta itemprop="description" content="提供個人前端技術、實用技巧與深入分析，讓你的前端開發之旅充滿樂趣。探索 Vue、React、JavaScript 等熱門技術的最新趨勢與實戰技巧。讓我們幫助你使編程更高效、更有趣！">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="解決 non-passive 事件監聽器警告 | Nielsen Blog">
-      <meta itemprop="description" content="這篇文章介紹了在 Vue 應用中解決 non-passive 事件監聽器警告的兩種有效方法，確保流暢的用戶互動。">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          解決 non-passive 事件監聽器警告
+  <div class="post-block">
+    <div class="post-content">
+      <div class="collection-title">
+        <h1 class="collection-header">Vue
+          <small>分類</small>
         </h1>
+      </div>
 
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2024-10-12 22:22:30" itemprop="dateCreated datePublished" datetime="2024-10-12T22:22:30+08:00">2024-10-12</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/vue/" itemprop="url" rel="index"><span itemprop="name">Vue</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-            <div class="post-description">這篇文章介紹了在 Vue 應用中解決 non-passive 事件監聽器警告的兩種有效方法，確保流暢的用戶互動。</div>
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在 Vue 應用中，處理事件監聽器的 passive 設置是提高性能的一個關鍵方面。這篇文章介紹兩種方法來解決 non-passive 事件監聽器的警告。</p>
-<h2 id="方法一：使用-passive-修飾符"><a href="#方法一：使用-passive-修飾符" class="headerlink" title="方法一：使用 .passive 修飾符"></a>方法一：使用 <code>.passive</code> 修飾符</h2><p>在事件監聽器上添加 <code>.passive</code> 修飾符，可以直接解決警告。例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@mouseleave.passive=&quot;leave&quot;</span><br></pre></td></tr></table></figure>
-
-<p>這種方法簡單且有效，適合大多數情況。</p>
-<h2 id="方法二：使用-default-passive-events-套件"><a href="#方法二：使用-default-passive-events-套件" class="headerlink" title="方法二：使用 default-passive-events 套件"></a>方法二：使用 <code>default-passive-events</code> 套件</h2><p>如果需要更全面的解決方案，可以使用 <code>default-passive-events</code> 套件。以下是使用步驟：</p>
-<ol>
-<li><p>安裝套件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install default-passive-events --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在 <code>main.js</code> 中引入套件：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&#x27;default-passive-events&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="注意事項"><a href="#注意事項" class="headerlink" title="注意事項"></a>注意事項</h3><p><code>default-passive-events</code> 套件能有效處理瀏覽器的事件默認行為，特別是 <code>touchstart</code> 和 <code>touchmove</code> 事件，從而提高頁面的滑動性能。然而，這個方法在某些情況下可能會引發錯誤，例如當頁面上沒有可滑動的元素時：</p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Vue%2Fdefault-passive-events%20error.gif?alt=media&token=114c7f85-0479-4ccf-9eaf-547c01a65c28" alt="default-passive-events error"></p>
-<p>如果您的頁面包含可滑動元素，請在使用此方法時保持警惕，以免影響用戶體驗。</p>
-<p>通過以上兩種方法，您可以有效解決 non-passive 事件監聽器的警告，並提升應用的性能。</p>
-
+      
+    <div class="collection-year">
+      <span class="collection-header">2024</span>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2024-10-08T12:17:39+08:00"
+              content="2024-10-08">
+          10-08
+        </time>
+      </div>
 
-    <footer class="post-footer">
-          
+      <div class="post-title">
+          <a class="post-title-link" href="/vue/lifecycle/" itemprop="url">
+            <span itemprop="name">Vue 生命週期</span>
+          </a>
+      </div>
 
-<div class="post-copyright">
-<ul>
-  <li class="post-copyright-author">
-      <strong>作者： </strong>Nielsen
-  </li>
-  <li class="post-copyright-link">
-      <strong>文章連結：</strong>
-      <a href="https://www.nielsen.tw/vue/non-passive-warning/" title="解決 non-passive 事件監聽器警告">https://www.nielsen.tw/vue/non-passive-warning/</a>
-  </li>
-  <li class="post-copyright-license">
-      <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
-  </li>
-</ul>
-</div>
-
-          <div class="post-tags">
-              <a href="/tags/javascript/" rel="tag"># JavaScript</a>
-              <a href="/tags/vue/" rel="tag"># Vue</a>
-          </div>
-
-        
-
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/vue/vue-shared-node-modules/" rel="prev" title="共用 Vue 專案的 node_modules">
-                  <i class="fa fa-angle-left"></i> 共用 Vue 專案的 node_modules
-                </a>
-            </div>
-            <div class="post-nav-item">
-                <a href="/vue/vue-methods-vs-computed/" rel="next" title="Vue Methods 與 Computed 的使用情境">
-                  Vue Methods 與 Computed 的使用情境 <i class="fa fa-angle-right"></i>
-                </a>
-            </div>
-          </div>
-    </footer>
+      
+    </header>
   </article>
-</div>
 
+    </div>
+  </div>
+  
+  
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" title="上一頁" aria-label="上一頁" href="/categories/vue/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/categories/vue/">1</a><a class="page-number" href="/categories/vue/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
 
-
-
-
-
-    <div class="comments gitalk-container"></div>
 </div>
   </main>
 
@@ -402,7 +311,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
 
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"asz8621","repo":"asz8621.github.io","client_id":"Ov23lihBbo3WzJoRjZsa","client_secret":"c592d79eaf88c14b2d87d53ff195c7df70d6a020","admin_user":"asz8621","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","labels":"Gitalk","language":"zh-TW","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"dc7bd667fa69833c2feaab71b8246dd6"}</script>
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"asz8621","repo":"asz8621.github.io","client_id":"Ov23lihBbo3WzJoRjZsa","client_secret":"c592d79eaf88c14b2d87d53ff195c7df70d6a020","admin_user":"asz8621","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","labels":"Gitalk","language":"zh-TW","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"746258be2def00f5cf975bf9635a6517"}</script>
 <script src="/js/third-party/comments/gitalk.js"></script>
 
 </body>
