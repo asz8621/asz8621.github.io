@@ -1,3 +1,5 @@
+https://www.nielsen.tw/vue/vuex-modules/
+https://www.nielsen.tw/javascript/web-usb/
 https://www.nielsen.tw/javascript/axios/
 https://www.nielsen.tw/cordova/remove-android-12-splash-screen/
 https://www.nielsen.tw/git/git/install-config/
@@ -10,7 +12,6 @@ https://www.nielsen.tw/javascript/web-bluetooth/
 https://www.nielsen.tw/hexo/next-tags-and-buttons/
 https://www.nielsen.tw/vue/watch-and-watcheffect/
 https://www.nielsen.tw/vue/vuex-strict/
-https://www.nielsen.tw/vue/vuex-modules/
 https://www.nielsen.tw/vue/vuex/
 https://www.nielsen.tw/vue/slot/
 https://www.nielsen.tw/vue/props-emit-component-communication/
@@ -34,7 +35,6 @@ https://www.nielsen.tw/browser/disable-google-translate-box/
 https://www.nielsen.tw/hexo/port-4000-in-use/
 https://www.nielsen.tw/hexo/next-gitalk/
 https://www.nielsen.tw/cordova/integrate-vue-cordova/
-https://www.nielsen.tw/javascript/web-usb/
 https://www.nielsen.tw/javascript/ajax/
 https://www.nielsen.tw/browser/no-paste-in-devtools/
 https://www.nielsen.tw/hexo/upload-hexo-to-github/
@@ -64,12 +64,12 @@ https://www.nielsen.tw/javascript/event/
 https://www.nielsen.tw/
 https://www.nielsen.tw/tags/javascript/
 https://www.nielsen.tw/tags/axios/
-https://www.nielsen.tw/tags/cordova/
-https://www.nielsen.tw/tags/hexo/
 https://www.nielsen.tw/tags/git/
-https://www.nielsen.tw/tags/vscode/
+https://www.nielsen.tw/tags/hexo/
 https://www.nielsen.tw/tags/Gitalk/
 https://www.nielsen.tw/tags/GitHub/
+https://www.nielsen.tw/tags/cordova/
+https://www.nielsen.tw/tags/vscode/
 https://www.nielsen.tw/tags/vue/
 https://www.nielsen.tw/tags/HTML/
 https://www.nielsen.tw/tags/seo/
@@ -78,9 +78,9 @@ https://www.nielsen.tw/tags/chrome/
 https://www.nielsen.tw/tags/devtools/
 https://www.nielsen.tw/tags/AJAX/
 https://www.nielsen.tw/categories/javascript/
-https://www.nielsen.tw/categories/cordova/
-https://www.nielsen.tw/categories/hexo/
 https://www.nielsen.tw/categories/git/
+https://www.nielsen.tw/categories/hexo/
+https://www.nielsen.tw/categories/cordova/
 https://www.nielsen.tw/categories/vscode/
 https://www.nielsen.tw/categories/vue/
 https://www.nielsen.tw/categories/seo/

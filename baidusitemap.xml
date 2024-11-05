@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.nielsen.tw/vue/vuex-modules/</loc>
+    <lastmod>2024-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.nielsen.tw/javascript/web-usb/</loc>
+    <lastmod>2024-11-05</lastmod>
+  </url>
+  <url>
     <loc>https://www.nielsen.tw/javascript/axios/</loc>
     <lastmod>2024-11-05</lastmod>
   </url>
@@ -47,10 +55,6 @@
   <url>
     <loc>https://www.nielsen.tw/vue/vuex-strict/</loc>
     <lastmod>2024-11-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nielsen.tw/vue/vuex-modules/</loc>
-    <lastmod>2024-10-31</lastmod>
   </url>
   <url>
     <loc>https://www.nielsen.tw/vue/vuex/</loc>
@@ -138,10 +142,6 @@
   </url>
   <url>
     <loc>https://www.nielsen.tw/cordova/integrate-vue-cordova/</loc>
-    <lastmod>2024-10-04</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nielsen.tw/javascript/web-usb/</loc>
     <lastmod>2024-10-04</lastmod>
   </url>
   <url>
