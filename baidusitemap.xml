@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.nielsen.tw/hexo/optimize-seo/</loc>
+    <lastmod>2024-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.nielsen.tw/vue/vue-shared-node-modules/</loc>
+    <lastmod>2024-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.nielsen.tw/seo/html-head/</loc>
+    <lastmod>2024-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.nielsen.tw/vue/ref-reactive-intro/</loc>
+    <lastmod>2024-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.nielsen.tw/vue/nexttick/</loc>
+    <lastmod>2024-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.nielsen.tw/javascript/web-bluetooth/</loc>
+    <lastmod>2024-11-05</lastmod>
+  </url>
+  <url>
     <loc>https://www.nielsen.tw/git/git/install-config/</loc>
+    <lastmod>2024-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.nielsen.tw/hexo/next-tags-and-buttons/</loc>
     <lastmod>2024-11-05</lastmod>
   </url>
   <url>
@@ -11,10 +39,6 @@
   <url>
     <loc>https://www.nielsen.tw/vue/vuex-strict/</loc>
     <lastmod>2024-11-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nielsen.tw/vue/ref-reactive-intro/</loc>
-    <lastmod>2024-10-31</lastmod>
   </url>
   <url>
     <loc>https://www.nielsen.tw/vue/vuex-modules/</loc>
@@ -37,16 +61,8 @@
     <lastmod>2024-10-29</lastmod>
   </url>
   <url>
-    <loc>https://www.nielsen.tw/vue/nexttick/</loc>
-    <lastmod>2024-10-29</lastmod>
-  </url>
-  <url>
     <loc>https://www.nielsen.tw/vue/for-loop/</loc>
     <lastmod>2024-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nielsen.tw/seo/html-head/</loc>
-    <lastmod>2024-10-22</lastmod>
   </url>
   <url>
     <loc>https://www.nielsen.tw/vue/seo-meta/</loc>
@@ -73,10 +89,6 @@
     <lastmod>2024-10-13</lastmod>
   </url>
   <url>
-    <loc>https://www.nielsen.tw/vue/vue-shared-node-modules/</loc>
-    <lastmod>2024-10-13</lastmod>
-  </url>
-  <url>
     <loc>https://www.nielsen.tw/vue/event-handling-and-modifiers/</loc>
     <lastmod>2024-10-13</lastmod>
   </url>
@@ -94,10 +106,6 @@
   </url>
   <url>
     <loc>https://www.nielsen.tw/seo/sitemap/</loc>
-    <lastmod>2024-10-07</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nielsen.tw/hexo/optimize-seo/</loc>
     <lastmod>2024-10-07</lastmod>
   </url>
   <url>
@@ -130,10 +138,6 @@
   </url>
   <url>
     <loc>https://www.nielsen.tw/javascript/web-usb/</loc>
-    <lastmod>2024-10-04</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nielsen.tw/javascript/web-bluetooth/</loc>
     <lastmod>2024-10-04</lastmod>
   </url>
   <url>
@@ -183,10 +187,6 @@
   <url>
     <loc>https://www.nielsen.tw/javascript/functions/</loc>
     <lastmod>2024-09-27</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nielsen.tw/hexo/next-tags-and-buttons/</loc>
-    <lastmod>2024-09-26</lastmod>
   </url>
   <url>
     <loc>https://www.nielsen.tw/javascript/array-practical-uses/</loc>
