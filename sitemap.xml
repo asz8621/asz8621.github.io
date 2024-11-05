@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.nielsen.tw/javascript/axios/</loc>
+    
+    <lastmod>2024-11-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/cordova/remove-android-12-splash-screen/</loc>
+    
+    <lastmod>2024-11-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/git/git/install-config/</loc>
+    
+    <lastmod>2024-11-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nielsen.tw/hexo/optimize-seo/</loc>
     
     <lastmod>2024-11-05</lastmod>
@@ -48,15 +75,6 @@
   
   <url>
     <loc>https://www.nielsen.tw/javascript/web-bluetooth/</loc>
-    
-    <lastmod>2024-11-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nielsen.tw/git/git/install-config/</loc>
     
     <lastmod>2024-11-05</lastmod>
     
@@ -308,15 +326,6 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/cordova/remove-android-12-splash-screen/</loc>
-    
-    <lastmod>2024-10-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nielsen.tw/javascript/web-usb/</loc>
     
     <lastmod>2024-10-04</lastmod>
@@ -372,15 +381,6 @@
   
   <url>
     <loc>https://www.nielsen.tw/vscode/template-literals-configuration/</loc>
-    
-    <lastmod>2024-10-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nielsen.tw/javascript/axios/</loc>
     
     <lastmod>2024-10-03</lastmod>
     
@@ -585,13 +585,6 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/tags/hexo/</loc>
-    <lastmod>2024-11-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nielsen.tw/tags/javascript/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -613,7 +606,7 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/tags/vscode/</loc>
+    <loc>https://www.nielsen.tw/tags/hexo/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -628,6 +621,13 @@
   
   <url>
     <loc>https://www.nielsen.tw/tags/GitHub/</loc>
+    <lastmod>2024-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/tags/vscode/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -692,13 +692,6 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/categories/hexo/</loc>
-    <lastmod>2024-11-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nielsen.tw/categories/javascript/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -707,6 +700,13 @@
   
   <url>
     <loc>https://www.nielsen.tw/categories/git/</loc>
+    <lastmod>2024-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/categories/hexo/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
