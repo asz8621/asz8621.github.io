@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.nielsen.tw/vue/define-expose/</loc>
+    
+    <lastmod>2025-09-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/vue/ref-reactive-intro/</loc>
+    
+    <lastmod>2025-09-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nielsen.tw/vue/props-emit-component-communication/</loc>
     
     <lastmod>2024-11-10</lastmod>
@@ -488,15 +506,6 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/vue/ref-reactive-intro/</loc>
-    
-    <lastmod>2024-11-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nielsen.tw/vue/nexttick/</loc>
     
     <lastmod>2024-11-05</lastmod>
@@ -578,6 +587,20 @@
 
   
   <url>
+    <loc>https://www.nielsen.tw/tags/javascript/</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nielsen.tw/tags/axios/</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nielsen.tw/tags/git/</loc>
     <lastmod>2025-09-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -593,20 +616,6 @@
   
   <url>
     <loc>https://www.nielsen.tw/tags/hexo/</loc>
-    <lastmod>2025-09-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nielsen.tw/tags/javascript/</loc>
-    <lastmod>2025-09-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nielsen.tw/tags/axios/</loc>
     <lastmod>2025-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -655,6 +664,13 @@
   </url>
   
   <url>
+    <loc>https://www.nielsen.tw/tags/AJAX/</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nielsen.tw/tags/browser/</loc>
     <lastmod>2025-09-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -675,14 +691,14 @@
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://www.nielsen.tw/tags/AJAX/</loc>
+    <loc>https://www.nielsen.tw/categories/javascript/</loc>
     <lastmod>2025-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
-  
-
   
   <url>
     <loc>https://www.nielsen.tw/categories/git/</loc>
@@ -700,13 +716,6 @@
   
   <url>
     <loc>https://www.nielsen.tw/categories/hexo/</loc>
-    <lastmod>2025-09-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nielsen.tw/categories/javascript/</loc>
     <lastmod>2025-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
