@@ -1,3 +1,4 @@
+https://www.nielsen.tw/vue/props-emit-component-communication/
 https://www.nielsen.tw/vue/watch-and-watcheffect/
 https://www.nielsen.tw/browser/no-paste-in-devtools/
 https://www.nielsen.tw/javascript/functions/
@@ -40,7 +41,6 @@ https://www.nielsen.tw/javascript/dataset/
 https://www.nielsen.tw/vue/lifecycle/
 https://www.nielsen.tw/vue/event-handling-and-modifiers/
 https://www.nielsen.tw/vue/vue-methods-vs-computed/
-https://www.nielsen.tw/vue/props-emit-component-communication/
 https://www.nielsen.tw/vue/use-v-for-with-v-if/
 https://www.nielsen.tw/vue/VeeValidate-v3/
 https://www.nielsen.tw/vue/vuex-strict/
@@ -62,11 +62,11 @@ https://www.nielsen.tw/about/index.html
 https://www.nielsen.tw/categories/index.html
 https://www.nielsen.tw/404.html
 https://www.nielsen.tw/
+https://www.nielsen.tw/tags/git/
 https://www.nielsen.tw/tags/cordova/
 https://www.nielsen.tw/tags/hexo/
 https://www.nielsen.tw/tags/javascript/
 https://www.nielsen.tw/tags/axios/
-https://www.nielsen.tw/tags/git/
 https://www.nielsen.tw/tags/Gitalk/
 https://www.nielsen.tw/tags/GitHub/
 https://www.nielsen.tw/tags/vscode/
@@ -77,10 +77,10 @@ https://www.nielsen.tw/tags/browser/
 https://www.nielsen.tw/tags/chrome/
 https://www.nielsen.tw/tags/devtools/
 https://www.nielsen.tw/tags/AJAX/
+https://www.nielsen.tw/categories/git/
 https://www.nielsen.tw/categories/cordova/
 https://www.nielsen.tw/categories/hexo/
 https://www.nielsen.tw/categories/javascript/
-https://www.nielsen.tw/categories/git/
 https://www.nielsen.tw/categories/vscode/
 https://www.nielsen.tw/categories/vue/
 https://www.nielsen.tw/categories/seo/
