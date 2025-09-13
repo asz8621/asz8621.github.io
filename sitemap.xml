@@ -596,6 +596,13 @@
 
   
   <url>
+    <loc>https://www.nielsen.tw/tags/cordova/</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nielsen.tw/tags/javascript/</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -610,14 +617,14 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/tags/hexo/</loc>
+    <loc>https://www.nielsen.tw/tags/git/</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/tags/git/</loc>
+    <loc>https://www.nielsen.tw/tags/hexo/</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -639,13 +646,6 @@
   
   <url>
     <loc>https://www.nielsen.tw/tags/vscode/</loc>
-    <lastmod>2025-09-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nielsen.tw/tags/cordova/</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -717,14 +717,14 @@
 
   
   <url>
-    <loc>https://www.nielsen.tw/categories/javascript/</loc>
+    <loc>https://www.nielsen.tw/categories/cordova/</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/categories/hexo/</loc>
+    <loc>https://www.nielsen.tw/categories/javascript/</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -738,14 +738,14 @@
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/categories/vscode/</loc>
+    <loc>https://www.nielsen.tw/categories/hexo/</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.nielsen.tw/categories/cordova/</loc>
+    <loc>https://www.nielsen.tw/categories/vscode/</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
