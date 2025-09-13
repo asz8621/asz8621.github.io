@@ -32,7 +32,7 @@
 <meta property="og:description" content="初次探索微前端架構的開發心得，並分享過程中的反思與技術觀察。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2025-09-10T14:36:09.000Z">
-<meta property="article:modified_time" content="2025-09-13T02:16:47.569Z">
+<meta property="article:modified_time" content="2025-09-13T02:23:20.706Z">
 <meta property="article:author" content="Nielsen">
 <meta property="article:tag" content="Vue">
 <meta property="article:tag" content="Micro-Frontend">
@@ -270,7 +270,8 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在前公司原本以 React 作為主要的前端開發框架。隨著專案的需求變化與團隊技術方向的調整，後續新功能與模組都開始改以 Vue 進行開發。由於人力與時程上的限制，React 專案無法立即淘汰，Vue 新功能也需要儘早上線，感覺是公司為了解決這樣的耦合與協作問題，導入了 <strong>微前端架構</strong>，讓各子系統能夠獨立開發與部署，並實現在單一系統中共存 React 與 Vue 的彈性架構。</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在我還沒入職前，公司原本以 React 作為主要的前端開發框架。隨著專案的需求變化與團隊技術方向的調整，後續新功能與模組都開始改以 Vue 進行開發，因此我踏上了微前端之旅。</p>
+<p>由於已經使用 React 開發一段時間了，人力與時程上的限制，React 專案無法立即淘汰，Vue 新功能也需要儘早上線，感覺是公司為了解決這樣的耦合與協作問題，導入了 <strong>微前端架構</strong>，讓各子系統能夠獨立開發與部署，並實現在單一系統中共存 React 與 Vue 的彈性架構。</p>
 <p>這篇文章是我作為使用微前端在開發過程中的觀察與心得整理，若有錯誤之處，還請見諒，畢竟我並未全程參與前期的微前端架構的規劃與建置。</p>
 <h2 id="架構分層設計"><a href="#架構分層設計" class="headerlink" title="架構分層設計"></a>架構分層設計</h2><p>在微前端架構中，前端應用通常可以分為四層，分層這部分的命名看團隊怎麼去規範，大致分別為：</p>
 <table>
@@ -328,7 +329,7 @@
 </li>
 </ul>
 <h2 id="微前端的好處"><a href="#微前端的好處" class="headerlink" title="微前端的好處"></a>微前端的好處</h2><ul>
-<li><p><strong>System &#x2F; Module 獨立部署錯誤不影響整體系統</strong><br>每個 System 或 Module 都有自己的版本、自己的 CI&#x2F;CD 流程，彼此之間不會互相干擾，所以當某個 System &#x2F; Module 掛掉，並不會去影響整體系統的運作，提高容錯能力。</p>
+<li><p><strong>System &#x2F; Module 獨立部署，錯誤不影響整體系統</strong><br>每個 System 或 Module 都有自己的版本、自己的 CI&#x2F;CD 流程，彼此之間不會互相干擾，所以當某個 System &#x2F; Module 掛掉，並不會去影響整體系統的運作，提高容錯能力。</p>
 </li>
 <li><p><strong>多框架共存</strong><br>Vue 與 React 可同時並行開發，讓舊有 React 專案持續維護的同時，能用 Vue 推進新需求，降低重構風險與人力成本。</p>
 </li>
