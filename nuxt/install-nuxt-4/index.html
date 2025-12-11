@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="googlec52a0f7a2fd90ce1.html">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-center-atom.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.nielsen.tw","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="手把手帶你從頭建立 Nuxt 4 專案，包含環境準備、初始化指令、常用模組選擇與開發伺服器啟動流程，快速上手 Nuxt 全端框架。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="從零開始建置 Nuxt 4 專案">
+<meta property="og:url" content="https://www.nielsen.tw/nuxt/install-nuxt-4/index.html">
+<meta property="og:site_name" content="Nielsen Blog">
+<meta property="og:description" content="手把手帶你從頭建立 Nuxt 4 專案，包含環境準備、初始化指令、常用模組選擇與開發伺服器啟動流程，快速上手 Nuxt 全端框架。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20install%20template.png?alt=media&token=3b3020c1-1351-4a2b-ba5c-a88e3626fab0">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20install%20package.png?alt=media&token=ec53e63d-7047-44e5-a63b-16b38b1d4f60">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20install%20git.png?alt=media&token=f55e2b67-8d39-4a28-81aa-0828a4619765">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20install%20wait.png?alt=media&token=207ed77c-60a8-422f-9248-a199519caf92">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20install%20modules.png?alt=media&token=272ec281-b8e7-4f71-93aa-57fe1d72f76e">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20init%20modules%20list.png?alt=media&token=df277bd8-9184-4bfd-af2c-6c08f6173445">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20preset%20screen.png?alt=media&token=d35ea193-b193-4366-8b3f-d747fc4e16bf">
+<meta property="article:published_time" content="2025-12-11T06:34:46.000Z">
+<meta property="article:modified_time" content="2025-12-11T07:18:55.644Z">
+<meta property="article:author" content="Nielsen">
+<meta property="article:tag" content="Nuxt">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20install%20template.png?alt=media&token=3b3020c1-1351-4a2b-ba5c-a88e3626fab0">
+
+
+<link rel="canonical" href="https://www.nielsen.tw/nuxt/install-nuxt-4/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://www.nielsen.tw/nuxt/install-nuxt-4/","path":"nuxt/install-nuxt-4/","title":"從零開始建置 Nuxt 4 專案"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>從零開始建置 Nuxt 4 專案 | Nielsen Blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-06HH7QMFMQ"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-06HH7QMFMQ","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6332741896027667"
+     crossorigin="anonymous"></script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Nielsen Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Front-End Blog｜ Frontend Fun</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜尋..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%9D%E5%BF%85%E8%A6%81%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7"><span class="nav-number">2.</span> <span class="nav-text">1. 安裝必要開發工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%BB%BA%E7%AB%8B-Nuxt-%E5%B0%88%E6%A1%88"><span class="nav-number">3.</span> <span class="nav-text">2. 建立 Nuxt 專案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%9E%A4-%E9%81%B8%E6%93%87%E5%B0%88%E6%A1%88%E6%A8%A1%E6%9D%BF"><span class="nav-number">3.1.</span> <span class="nav-text">➤ 選擇專案模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%9E%A4-%E9%81%B8%E6%93%87%E5%A5%97%E4%BB%B6%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7"><span class="nav-number">3.2.</span> <span class="nav-text">➤ 選擇套件管理工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%9E%A4-%E6%98%AF%E5%90%A6%E5%88%9D%E5%A7%8B%E5%8C%96-Git"><span class="nav-number">3.3.</span> <span class="nav-text">➤ 是否初始化 Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%9E%A4-%E5%AE%89%E8%A3%9D%E9%81%8E%E7%A8%8B"><span class="nav-number">3.4.</span> <span class="nav-text">➤ 安裝過程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%9E%A4-%E9%81%B8%E6%93%87%E6%98%AF%E5%90%A6%E5%8A%A0%E5%85%A5-Nuxt-%E6%A8%A1%E7%B5%84"><span class="nav-number">3.5.</span> <span class="nav-text">➤ 選擇是否加入 Nuxt 模組</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%AE%89%E8%A3%9D%E5%B0%88%E6%A1%88%E5%A5%97%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">3. 安裝專案套件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%95%9F%E5%8B%95%E9%96%8B%E7%99%BC%E4%BC%BA%E6%9C%8D%E5%99%A8"><span class="nav-number">5.</span> <span class="nav-text">4. 啟動開發伺服器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B8%BD%E7%B5%90"><span class="nav-number">6.</span> <span class="nav-text">總結</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <a href="/">
+      <img class="site-author-image" itemprop="image" alt="Nielsen" src="/images/avatar.jpg">
+    </a>
+  <p class="site-author-name" itemprop="name">Nielsen</p>
+  
+  <div class="site-description" itemprop="description">前端開發筆記，歡迎志同道合的朋友一起討論與交流。</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">62</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://portaly.cc/asz718460/support" title="portaly → https:&#x2F;&#x2F;portaly.cc&#x2F;asz718460&#x2F;support" rel="noopener me" target="_blank"><i class="fas fa-hand-holding-usd fa-fw"></i>portaly</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:asz718460@gmail.com" title="E-Mail → mailto:asz718460@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://www.nielsen.tw/nuxt/install-nuxt-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Nielsen">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nielsen Blog">
+      <meta itemprop="description" content="提供個人前端技術、實用技巧與深入分析，讓你的前端開發之旅充滿樂趣。探索 Vue、React、JavaScript 等熱門技術的最新趨勢與實戰技巧。讓我們幫助你使編程更高效、更有趣！">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="從零開始建置 Nuxt 4 專案 | Nielsen Blog">
+      <meta itemprop="description" content="手把手帶你從頭建立 Nuxt 4 專案，包含環境準備、初始化指令、常用模組選擇與開發伺服器啟動流程，快速上手 Nuxt 全端框架。">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          從零開始建置 Nuxt 4 專案
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2025-12-11 14:34:46" itemprop="dateCreated datePublished" datetime="2025-12-11T14:34:46+08:00">2025-12-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Nuxt/" itemprop="url" rel="index"><span itemprop="name">Nuxt</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">手把手帶你從頭建立 Nuxt 4 專案，包含環境準備、初始化指令、常用模組選擇與開發伺服器啟動流程，快速上手 Nuxt 全端框架。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多人第一次接觸 Nuxt 都會問：「我用 Vue 就能開發前端應用，那為什麼還需要 Nuxt？」<br>其實，當專案逐漸變大時，Vue 本身會遇到一些常見的痛點，例如：路由與資料夾結構難以統一、需要額外設定 SSR 或 SEO、開發環境需要自行組裝、API 與前端分離造成維護成本增加等。</p>
+<p>Nuxt 正是為了解決這些問題而誕生的。它在 Vue 的基礎上，提供了 <strong>檔案即路由、伺服器端渲染（SSR）、API routes、最佳化預設、專案結構規範</strong> 等功能，讓你不需要花時間組裝專案架構，就能直接進入開發。</p>
+<p>以下將示範如何從零開始建立一個全新的 <strong>Nuxt 4 專案</strong>。</p>
+<h2 id="1-安裝必要開發工具"><a href="#1-安裝必要開發工具" class="headerlink" title="1. 安裝必要開發工具"></a>1. 安裝必要開發工具</h2><p>開始之前，請確認你已安裝：</p>
+<ul>
+<li><strong>Node.js（建議使用 LTS）</strong> 最低建議使用 Node.js 20.x 或以上</li>
+<li><strong>npm、pnpm 或 yarn</strong> 任一套件管理工具</li>
+</ul>
+<p>你可以用以下指令確認版本：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">pnpm -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-建立-Nuxt-專案"><a href="#2-建立-Nuxt-專案" class="headerlink" title="2. 建立 Nuxt 專案"></a>2. 建立 Nuxt 專案</h2><p>Nuxt 官方提供 <code>create-nuxt</code> 工具，只需要一行指令即可建立新專案：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm create nuxt@latest my-nuxt-app</span><br></pre></td></tr></table></figure>
+
+<p>執行後會進入互動式設定流程，包含：</p>
+<h3 id="➤-選擇專案模板"><a href="#➤-選擇專案模板" class="headerlink" title="➤ 選擇專案模板"></a>➤ 選擇專案模板</h3><p>若你要全新專案，建議選 <strong>Minimal (Minimal setup for Nuxt 4)</strong><br><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20install%20template.png?alt=media&token=3b3020c1-1351-4a2b-ba5c-a88e3626fab0" alt="Nuxt install template"></p>
+<h3 id="➤-選擇套件管理工具"><a href="#➤-選擇套件管理工具" class="headerlink" title="➤ 選擇套件管理工具"></a>➤ 選擇套件管理工具</h3><p>建議 pnpm，速度最快。<br><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20install%20package.png?alt=media&token=ec53e63d-7047-44e5-a63b-16b38b1d4f60" alt="Nuxt install package"></p>
+<h3 id="➤-是否初始化-Git"><a href="#➤-是否初始化-Git" class="headerlink" title="➤ 是否初始化 Git"></a>➤ 是否初始化 Git</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20install%20git.png?alt=media&token=f55e2b67-8d39-4a28-81aa-0828a4619765" alt="Nuxt install git"></p>
+<h3 id="➤-安裝過程"><a href="#➤-安裝過程" class="headerlink" title="➤ 安裝過程"></a>➤ 安裝過程</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20install%20wait.png?alt=media&token=207ed77c-60a8-422f-9248-a199519caf92" alt="Nuxt install wait"></p>
+<h3 id="➤-選擇是否加入-Nuxt-模組"><a href="#➤-選擇是否加入-Nuxt-模組" class="headerlink" title="➤ 選擇是否加入 Nuxt 模組"></a>➤ 選擇是否加入 Nuxt 模組</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20install%20modules.png?alt=media&token=272ec281-b8e7-4f71-93aa-57fe1d72f76e" alt="Nuxt install modules"></p>
+<p>選 <code>Yes</code> 的 modules 清單<br><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20init%20modules%20list.png?alt=media&token=df277bd8-9184-4bfd-af2c-6c08f6173445" alt="Nuxt init modules list"></p>
+<table>
+<thead>
+<tr>
+<th>模組</th>
+<th>分類</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@nuxt&#x2F;content</td>
+<td>內容系統</td>
+<td>用 Markdown 產生網頁</td>
+</tr>
+<tr>
+<td>@nuxt&#x2F;eslint</td>
+<td>品質</td>
+<td>程式碼風格檢查</td>
+</tr>
+<tr>
+<td>@nuxt&#x2F;hints</td>
+<td>效能</td>
+<td>顯示最佳化提示</td>
+</tr>
+<tr>
+<td>@nuxt&#x2F;http</td>
+<td>API</td>
+<td>（舊）HTTP client</td>
+</tr>
+<tr>
+<td>@nuxt&#x2F;image</td>
+<td>效能</td>
+<td>最佳化圖片</td>
+</tr>
+<tr>
+<td>@nuxt&#x2F;scripts</td>
+<td>效能</td>
+<td>控制 script 載入方式</td>
+</tr>
+<tr>
+<td>@nuxt&#x2F;test-utils</td>
+<td>測試</td>
+<td>Nuxt 的測試環境</td>
+</tr>
+<tr>
+<td>@nuxt&#x2F;typescript-runtime</td>
+<td>TS</td>
+<td>TS runtime 支援</td>
+</tr>
+<tr>
+<td>@nuxt&#x2F;typescript-build</td>
+<td>TS</td>
+<td>build-time TS 功能</td>
+</tr>
+<tr>
+<td>@nuxt&#x2F;ui</td>
+<td>UI</td>
+<td>官方 UI component 套件</td>
+</tr>
+</tbody></table>
+<p>你可以依需求選擇模組，我會用的有：</p>
+<ul>
+<li><code>@nuxt/eslint</code> — 整合 ESLint</li>
+<li><code>@nuxt/image</code> — 最佳化圖片</li>
+</ul>
+<p>下面這些則<strong>不需要再裝了</strong>：</p>
+<ul>
+<li><code>@nuxt/http</code>（已被更佳方案取代，如 useFetch）</li>
+<li><code>@nuxt/typescript-runtime</code> 或 <code>@nuxt/typescript-build</code>（Nuxt 4 已內建完整 TS 支援）</li>
+</ul>
+<p>安裝完成後，進入專案資料夾：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> my-nuxt-app</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-安裝專案套件"><a href="#3-安裝專案套件" class="headerlink" title="3. 安裝專案套件"></a>3. 安裝專案套件</h2><p>使用 <strong>pnpm</strong>（推薦）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm install</span><br></pre></td></tr></table></figure>
+
+<p>或使用 <strong>npm</strong>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-啟動開發伺服器"><a href="#4-啟動開發伺服器" class="headerlink" title="4. 啟動開發伺服器"></a>4. 啟動開發伺服器</h2><p>準備完成後，即可啟動開發環境：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm dev</span><br></pre></td></tr></table></figure>
+
+<p>或使用 npm：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
+
+<p>終端機會顯示：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Nuxt is running at http://localhost:3000</span><br></pre></td></tr></table></figure>
+
+<p>打開瀏覽器就能看到 Nuxt 的預設畫面<br><img src="https://firebasestorage.googleapis.com/v0/b/blog-bc88e.appspot.com/o/Nuxt%2FNuxt%20preset%20screen.png?alt=media&token=d35ea193-b193-4366-8b3f-d747fc4e16bf" alt="Nuxt preset screen"></p>
+<h2 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h2><p>Nuxt 幫你把路由、設定、最佳化等細節都處理好，再加上直覺的檔案結構，讓開發 Vue 專案變得更快速、順暢。對於想打造 Vue 全端應用的開發者而言，Nuxt 是非常高效率且容易上手的選擇絕對值得試試。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>作者： </strong>Nielsen
+  </li>
+  <li class="post-copyright-link">
+      <strong>文章連結：</strong>
+      <a href="https://www.nielsen.tw/nuxt/install-nuxt-4/" title="從零開始建置 Nuxt 4 專案">https://www.nielsen.tw/nuxt/install-nuxt-4/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Nuxt/" rel="tag"># Nuxt</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/nuxt/what-is-nuxtjs/" rel="prev" title="什麼是 Nuxt.js？為何選擇它來構建 Vue.js 應用？">
+                  <i class="fa fa-angle-left"></i> 什麼是 Nuxt.js？為何選擇它來構建 Vue.js 應用？
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Nielsen</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="external nofollow" target="_blank">NexT.Gemini</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/asz8621" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"asz8621","repo":"asz8621.github.io","client_id":"Ov23lihBbo3WzJoRjZsa","client_secret":"c592d79eaf88c14b2d87d53ff195c7df70d6a020","admin_user":"asz8621","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","labels":"Gitalk","language":"zh-TW","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"39494e633b164709a4d7e47e47fe5b8d"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>
